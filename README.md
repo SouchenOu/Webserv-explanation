@@ -91,8 +91,6 @@ il saura que :
 3: cash DNS qui est consulter pour extraire l'address IP qui correspont le nom du domaine
 
 
-<img width="810" alt="Screen Shot 2023-03-10 at 12 35 30 PM" src="https://user-images.githubusercontent.com/87101785/224306139-0d91bce5-e36a-4b9d-9d97-2bae5ced5c09.png">
-
 
 <img width="1901" alt="Screen Shot 2023-03-10 at 12 36 05 PM" src="https://user-images.githubusercontent.com/87101785/224306249-8604456e-7ecd-485d-b018-cb54e7422207.png">
 
