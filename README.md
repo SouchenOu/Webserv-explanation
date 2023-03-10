@@ -6,11 +6,11 @@ What is HTTP?
 The Hypertext Transfer Protocol (HTTP) is the foundation of the World Wide Web, and is used to load webpages using hypertext links. HTTP is an application layer protocol designed to transfer information between networked devices and runs on top of other layers of the network protocol stack. A typical flow over HTTP involves a client machine making a request to a server, which then sends a response message.
 
 
-Cest un protocole la plus utiliser sur internet, il permet un navigateur d'obtenir des page web.
+C'est un protocole la plus utiliser sur internet, il pêrmet un navigateur d'obtenir des page web.
 
-le navigateur web est une application client qui accede aux ressources stockees sur un serveur web.
+le navigateur web est une application client qui accède aux ressources stockees sur un serveur web.
 
-Lorsque une URL est saisie au niveau des navigateur web client, le client http envoyer un requete http au serveur, le protocole http au niveau de serveur http s'execute en arriere plan, donc il s'agie d'un service, donc ce service il va traiter la requite http et il envois ce que n'appele une reponse http.
+Lorsque une URL est saisie au niveau des navigateur web client, le client http envoyer un requête http au serveur, le protocole http au niveau de serveur http s'éxecute en arriere plan, donc il s'agie d'un service, donc ce service il va traiter la requête http et il envois ce que n'appele une reponse http.
 
 
 La structure d'une requite HTTP:
@@ -34,9 +34,9 @@ La structure d'une requite HTTP:
 Partie 1: 
 *********
 
-La methode-> qui peux etre sois de type :
+La methode-> qui peux être sois de type :
 
-GET ---> demander des page HTML (La requite http il est envoyer pour demander une page html)
+GET ---> demander des page HTML (La requête http il est envoyer pour demander une page html)
 
 HEAD ---> le client il est entrain de demander a travers la requête http des informations sur une ressource sans demander la ressource elle-même.
 
@@ -60,11 +60,44 @@ Il dois être séparer du reste de la requête par une ligne vide. Il contient l
 
 --------------------------------> Réponse HTTP:
 
-Une reponse HTTP contient des donner envoyer depuis le serveur (Les donner recue peuvent être  de different types(Données en text clair ou html, blug-in donnees nécessitant un autre service au programme ou .....))
+Une reponse HTTP contient des donner envoyer depuis le serveur (Les donner recue peuvent être  de différent types(Données en text clair ou html, blug-in donnees nécessitant un autre service au programme ou .....))
 
 Pour aider le navigateur a determiner le type de fichier qu'il recois, le serveur indique le type de donner que contient le fichier
 
 
+
+Un example:
+------------
+
+
+<img width="810" alt="Screen Shot 2023-03-10 at 12 22 38 PM" src="https://user-images.githubusercontent.com/87101785/224303727-09e580df-3f57-45f8-bd55-3676f36524a7.png">
+
+l'utilisateur saisie URL suivant : http://www.example.com
+
+les etapes:
+
+1: Le navigateur interprète les trois partie de L'URL(Uniform ressorce locator):
+
+il saura que :
+
+*Le protocol--> HTTP
+
+*Le nom du domaine --> www.example.com
+
+*resource demainder --> c'est la page index.html
+
+2: a partir du prefix http du URL, le navigateur determine que le protocole a utiliser est http, ainsi il definie 80 comme numéro de port destination et un numéro aléatoire comme numéro de port source. 
+
+3: cash DNS qui est consulter pour extraire l'address IP qui correspont le nom du domaine
+
+
+<img width="810" alt="Screen Shot 2023-03-10 at 12 35 30 PM" src="https://user-images.githubusercontent.com/87101785/224306139-0d91bce5-e36a-4b9d-9d97-2bae5ced5c09.png">
+
+
+<img width="1901" alt="Screen Shot 2023-03-10 at 12 36 05 PM" src="https://user-images.githubusercontent.com/87101785/224306249-8604456e-7ecd-485d-b018-cb54e7422207.png">
+
+
+donc ici une requête http est envoyer au serveur consérner, aprés le serveur il va traiter la requéte et apres il va envoyer la ressouce demander (la page www.example.com/index.html)
 
 
 
