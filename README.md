@@ -134,15 +134,29 @@ There are thousands of different network protocols, but they all perform one of 
 3->Security
 
 
+----------DNS:
+
+Domain name system. DNS is a database that includes a website's domain name, which people use to access the website, and its corresponding IP addresses, which devices use to locate the website. DNS translates the domain name into IP addresses, and these translations are included within the DNS. Servers can cache DNS data, which is required to access the websites. DNS also includes the DNS protocol, which is within the IP suite and details the specifications DNS uses to translate and communicate.
+
+--------DHCP:
+
+Dynamic Host Configuration Protocol. DHCP assigns IP addresses to network endpoints so they can communicate with other network endpoints over IP. Whenever a device joins a network with a DHCP server for the first time, DHCP automatically assigns it a new IP address and continues to do so each time a device moves locations on the network.
+
+When a device connects to a network, a DHCP handshake takes place, where the device and DHCP server communicate. The device establishes a connection; the server receives it and provides available IP addresses; the device requests an IP address; and the server confirms it to complete the process.
+
+Every device on a TCP/IP-based network must have a unique unicast IP address to access the network and its resources. Without DHCP, IP addresses for new computers or computers that are moved from one subnet to another must be configured manually; IP addresses for computers that are removed from the network must be manually reclaimed.
 
 
 
+---------FTP:
 
+FTP stands for File transfer protocol.
 
+FTP is a standard internet protocol provided by TCP/IP used for transmitting the files from one host to another.
 
+It is mainly used for transferring the web page files from their creator to the computer that acts as a server for other computers on the internet.
 
-
-
+It is also used for downloading the files to computer from other servers.
 
 
 
