@@ -1,4 +1,4 @@
-# Web-serve-explination
+# Webserv-explination
 
  🌱 What is HTTP?
 ------------
