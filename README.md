@@ -177,8 +177,12 @@ The Internet Protocol (IP) is a protocol, or set of rules, for routing and addre
 
 Once the packets arrive at their destination, they are handled differently depending on which transport protocol is used in combination with IP. The most common transport protocols are TCP and UDP.
 
+--------Telnet:
 
- 🌱 Ressources:
+TELNET stands for Teletype Network. It is a type of protocol that enables one computer to connect to local computer. It used as a standard TCP/IP protocol for virtual terminal service which is provided by ISO. The computer which starts the connection is known as the local computer. The computer which is being connected to i.e. which accepts the connection known as the remote computer. During telnet operation, whatever is being performed on the remote computer will be displayed by the local computer. Telnet operates on client/server principle. The local computer uses telnet client program and the remote computers uses telnet server program. 
+
+
+🌱 Ressources:
 ------------
 
 https://www.youtube.com/watch?v=auhEJDGHI8Q
