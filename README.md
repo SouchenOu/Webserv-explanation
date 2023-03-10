@@ -108,6 +108,38 @@ il saura que :
 donc ici une requête http est envoyer au serveur consérner, aprés le serveur il va traiter la requéte et apres il va envoyer la ressouce demander (la page www.example.com/index.html)
 
 
+2: Protocole:
+************************
+
+
+2.1: What is protocole:
+----------------------
+
+a protocol can be defined as a set of rules convensions and data structures that dictate how devices extchange data across a networks. In other words network protocols can be equated to languages that two devices most understand for seamless communication of information, regardless of their infrastructure and design desparities.
+
+A network protocol is an established set of rules that determine how data is transmitted between different devices in the same network. Essentially, it allows connected devices to communicate with each other, regardless of any differences in their internal processes, structure or design. Network protocols are the reason you can easily communicate with people all over the world, and thus play a critical role in modern digital communications.
+
+Similar to the way that speaking the same language simplifies communication between two people, network protocols make it possible for devices to interact with each other because of predetermined rules built into devices’ software and hardware. Neither local area networks (LAN) nor wide area networks (WAN) could function the way they do today without the use of network protocols.
+
+
+2.2: List of Network Protocols:
+-------------------------------
+
+There are thousands of different network protocols, but they all perform one of three primary actions:
+
+1-> Communication
+
+2->Network management
+
+3->Security
+
+
+
+
+
+
+
+
 
 
 
@@ -122,3 +154,5 @@ https://www.youtube.com/watch?v=auhEJDGHI8Q
 https://www.youtube.com/watch?v=2JYT5f2isg4
 
 https://www.youtube.com/watch?v=YqEqjODUkWY&list=PLPUbh_UILtZW1spXkwszDBN9YhtB0tFKC&index=2
+
+https://developer.mozilla.org/en-US/docs/Web/HTTP
