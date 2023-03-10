@@ -67,7 +67,7 @@ Pour aider le navigateur a determiner le type de fichier qu'il recois, le serveu
 
 
 
- 🌱 Un example:
+ 🌱  example:
 ------------
 
 
