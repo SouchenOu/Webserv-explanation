@@ -16,7 +16,7 @@ Lorsque une URL est saisie au niveau des navigateur web client, le client http e
 La structure d'une requite HTTP:
 -------------------------------
 
-Une requete http comprend 3 parties :
+
 
 
 
@@ -25,9 +25,9 @@ Une requete http comprend 3 parties :
 
 
 
+-------------------------------->Une requête http comprend 3 parties :
 
-
-1******: une ligne de commades:
+1 ******: une ligne de commades:
 
 -> La ligne du commande il est composer de trois partie:
 
@@ -54,11 +54,15 @@ Il dois être séparer du reste de la requête par une ligne vide. Il contient l
 
 
 
-2******: Une liste d'entêtes avec leur valeur
+2 ********: Une liste d'entêtes avec leur valeur
 
-3******: Le corps de la requêtes(facultatif).
+3 ********: Le corps de la requêtes(facultatif).
 
+--------------------------------> Réponse HTTP:
 
+Une reponse HTTP contient des donner envoyer depuis le serveur (Les donner recue peuvent être  de different types(Données en text clair ou html, blug-in donnees nécessitant un autre service au programme ou .....))
+
+Pour aider le navigateur a determiner le type de fichier qu'il recois, le serveur indique le type de donner que contient le fichier
 
 
 
