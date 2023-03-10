@@ -28,6 +28,8 @@ Lorsque une URL est saisie au niveau des navigateur web client, le client http e
 💬💬💬💬💬💬💬💬💬💬💬-------------------------------->Une requête http comprend 3 parties :💬💬💬💬💬💬💬💬💬💬💬💬
 *******************************
 
+
+
 📫 1 ******: une ligne de commades: 📫
 
 -> La ligne du commande il est composer de trois partie:
@@ -58,8 +60,15 @@ Il dois être séparer du reste de la requête par une ligne vide. Il contient l
 
 📫 3 ********: Le corps de la requêtes(facultatif). 📫
 
+
+
+
+
 💬💬💬💬💬💬💬💬💬💬💬💬💬--------------------------------> Réponse HTTP:💬💬💬💬💬💬💬💬💬💬💬💬💬💬💬💬
 *********************************************************************
+
+
+
 
 Une reponse HTTP contient des donner envoyer depuis le serveur (Les donner recue peuvent être  de différent types(Données en text clair ou html, blug-in donnees nécessitant un autre service au programme ou .....))
 
