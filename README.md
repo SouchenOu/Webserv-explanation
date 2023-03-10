@@ -16,6 +16,55 @@ Lorsque une URL est saisie au niveau des navigateur web client, le client http e
 La structure d'une requite HTTP:
 -------------------------------
 
+Une requete http comprend 3 parties :
+
+
+
+<img width="446" alt="Screen Shot 2023-03-10 at 11 55 16 AM" src="https://user-images.githubusercontent.com/87101785/224298314-ffc5c25c-f99f-45c6-a59b-156489bba8b5.png">
+
+
+
+
+
+
+1******: une ligne de commades:
+
+-> La ligne du commande il est composer de trois partie:
+
+Partie 1: 
+*********
+
+La methode-> qui peux etre sois de type :
+
+GET ---> demander des page HTML (La requite http il est envoyer pour demander une page html)
+
+HEAD ---> le client il est entrain de demander a travers la requête http des informations sur une ressource sans demander la ressource elle-même.
+
+POST---->  envoyer des donnéer saisies dans un formulaire integré a une page web au serveur web (Quand le client saisie ses informations dans un formulaire et ses informations il vont être envoiyer dans une requête http)
+
+Partie 2:
+********
+
+URL-> Pour identifier la ressource
+
+Partie 3:
+********
+
+Il dois être séparer du reste de la requête par une ligne vide. Il contient les donner a fournir au serveur(cet partie il est utiliser lorsque le client il veux envoyer des donner au serveur).
+
+
+
+2******: Une liste d'entêtes avec leur valeur
+
+3******: Le corps de la requêtes(facultatif).
+
+
+
+
+
+
+
+
 
 
 
