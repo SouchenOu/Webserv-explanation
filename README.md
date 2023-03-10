@@ -160,6 +160,15 @@ It is also used for downloading the files to computer from other servers.
 
 
 
+
+Objectives of FTP:
+
+It provides the sharing of files.
+
+It is used to encourage the use of remote computers.
+
+It transfers the data more reliably and efficiently.
+
  🌱 Ressources:
 ------------
 
