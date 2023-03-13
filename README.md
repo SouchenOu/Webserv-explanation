@@ -90,6 +90,11 @@ The Internet Network layer encloses the packet in an Internet Protocol (IP) data
 
 The Network Interface layer accepts IP datagrams and transmits them as frames over a specific network hardware, such as Ethernet or Token-Ring networks.
 
+<img width="1279" alt="Screen Shot 2023-03-13 at 5 24 16 PM" src="https://user-images.githubusercontent.com/87101785/224764069-84c5588b-7c43-47d0-9acc-d839623a98a4.png">
+
+
+
+
 What is OSI?
 -----------
 
