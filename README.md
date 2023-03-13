@@ -143,12 +143,12 @@ donc ici une requête http est envoyer au serveur consérner, aprés le serveur 
 
 HTTP : Hyper-text-Transfer-Protocol basically responsible for communication between web servers and clients, it is the protocol of the web, so every time you open your browser and you visit a web-page or you submit a form, or you click a button than sends some kind of ajax request or fetch request, something like that you are using HTTP and you are going through what is called the request and response cycle. You make a requeste and you get a response back that has something called headers and something called the body, and we are going to look more into that cycle in a bit.
 
-http is stateless meaning that every request is completely independent, when you make one request vesiting a web page or go to another page after that,
-or reload the page it dosent remember anyting about the previous, you can kind of look at each request as a single transactio.
+http is stateless, meaning that every request is completely independent, when you make one request visiting a web page or go to another page after that,
+or reload the page it dosent remember anyting about the previous, you can kind of look at each request as a single transaction.
 
 HTTPS: Hyper-text-Transfer-Protocol-secure(Data sent is encrypted) it basically where all the data that is sent back is encrypted by something called SSL which stands for secure sockets layer or by TLS which is transport security layer, so anytime you have users that are sending sensitive information 
 
-it should always be over https especially if it is like credit card data, social security numbers, you want to have a hight level of security fot that stuff.
+it should always be over https especially if it is like credit card data, social security numbers, you want to have a hight level of security for that stuff.
 
 A lot of websites and applications now are just forcing https on every page which is a bad idea, you can do this by installing an ssl certificate on your web host, there is different level of security.
 
@@ -156,16 +156,72 @@ A lot of websites and applications now are just forcing https on every page whic
 Al right when a request is made to a server it has some kind of method attached to it, and there is more than this .
 
 
-GET: a get request is used to get or fetch data from the server, tjis could be just loading a standard HTML page, loading assets like CSS or images JSON data XML data, so everytime you visit a webpage you are making a get request to the server via HTTP.
+GET: a get request is used to get or fetch data from the server, it could be just loading a standard HTML page, loading assets like CSS or images JSON data XML data, so everytime you visit a webpage you are making a get request to the server via HTTP.
+
+POST: post request is usually used when you are posting data or when you are adding something to the server(adding a ressource) or when you submit a form like let's say a contact form you will be making a post request, if you are submitting maybe a blog post or creating a blog post that is gonna be a POST request, you are sending data to the server and typically that data will be stored in a database somewhere. we can also have forms that make GET request but it is less secure.
+
+PUT : put request which is used to update data that is already on the server so if you have a blog post you want to edit it, maybe change the image or change some text, typically you do that with a put request.
+
+
+Delete: delete request just delete data from the server.
 
 
 
 
 
+With each request and response using HTTP  we have something called the header and something called the body
+
+<img width="937" alt="Screen Shot 2023-03-13 at 2 50 42 PM" src="https://user-images.githubusercontent.com/87101785/224721630-8d929d10-09e8-4aac-ae19-8ecd68716fab.png">
+
+
+The body typically with a response is going to be the html page that you are trying to load  the json data whatever is being sent from the server and then when you make a request you can also send a request body for instance when you submit a form, the form fields you are submitting are part of the request body.
+
+When you comes to the header you also have a request headers and response headers in something called a general header, it is basically divided into three parts and there is different fields on each parts 
+
+<img width="2390" alt="Screen Shot 2023-03-13 at 3 06 39 PM" src="https://user-images.githubusercontent.com/87101785/224725654-6b07a55c-48b8-41d2-9dce-065024d1aef9.png">
+
+A header will look something like this, you will make a (Method like a GET request)(Path or URL)(with aprotocol in this case http) and have all this different header fields and a lot of this you are not really  going to care about but it is good to know what some of the more common ones 
+do and what they are especially with the general part of it.
+
+so in general we have --->
+
+request URL: It is just the URL you are requesting 
+
+Request Method : so if it is a get request, post request .....
+
+Statues code: it is probably the most important 
+
+Remote address: which is the ip of the remote computer.
+
+Referrer Policy: if you go to a page from another page it might have some information and that and whatever the poll referrer policy  is.
 
 
 
+In Response we have --->
 
+server : so if it is apache or nginx or something like that, and a lot of times this will be hidden just to prevent hackers from knowing what type of server the website uses.
+
+Set-Cookies : is used for servers to send small pieces of data called cookies from the server to the client.
+
+content type : so every response has a content type for instance if it is an html page it will have a content type of text/html, css files would be test/css, images will have image/png or image/jpeg.
+
+Content-Length: Content length which is just that it is the length, it is in octets.
+
+In request we have --->
+
+Cookies: if you have a cookie that was previously sent by the server and you need to send it back to the server you would do it in this field 
+
+Accept-xxx: Like accepting coding, accepting character set , accepting language.
+
+Content-Type: if you are sending data like lets say you are sending json, you had want to set this to application/json
+
+Content-Length: 
+
+Authorization: remember that http is stateless so you might need to send some type of token withing the header , the authorization and the header so that you can for instance validate a user to access a protected route or a protected page, unless you are using something like session on the server .
+
+User-Agent: is typically a long string that has to do with the software that the user is using the operating system, the browser think like that .
+
+Referrer: referrer has info regarding the referring site, if you are to click on a link or whatever
 
 ------------------------------------------------------------------------
 
