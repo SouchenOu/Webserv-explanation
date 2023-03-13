@@ -1,5 +1,71 @@
 # Webserv-explination
 
+
+1: Web server
+-------------
+
+1.1-What is web server?
+-----------------------
+
+The term web server can refer to hardware or software, or both of them working together.
+
+1:On the hardware side, a web server is a computer that stores web server software and a website's component files (for example, HTML documents, images, CSS stylesheets, and JavaScript files). A web server connects to the Internet and supports physical data interchange with other devices connected to the web.
+
+2:On the software side, a web server includes several parts that control how web users access hosted files. At a minimum, this is an HTTP server. An HTTP server is software that understands URLs (web addresses) and HTTP (the protocol your browser uses to view webpages). An HTTP server can be accessed through the domain names of the websites it stores, and it delivers the content of these hosted websites to the end user's device.
+
+
+
+At the most basic level, whenever a browser needs a file that is hosted on a web server, the browser requests the file via HTTP. When the request reaches the correct (hardware) web server, the (software) HTTP server accepts the request, finds the requested document, and sends it back to the browser, also through HTTP. (If the server doesn't find the requested document, it returns a 404 response instead.)
+
+
+<img width="663" alt="Screen Shot 2023-03-13 at 4 19 39 PM" src="https://user-images.githubusercontent.com/87101785/224746231-34b20423-0930-4f2f-82d8-663201bbcb06.png">
+
+
+A static web server, or stack, consists of a computer (hardware) with an HTTP server (software). We call it "static" because the server sends its hosted files as-is to your browser.
+
+A dynamic web server consists of a static web server plus extra software, most commonly an application server and a database. We call it "dynamic" because the application server updates the hosted files before sending content to your browser via the HTTP server.
+
+
+---->Deeper dive
+
+To review: to fetch a webpage, your browser sends a request to the web server, which searches for the requested file in its own storage space. Upon finding the file, the server reads it, processes it as needed, and sends it to the browser. Let's look at those steps in more detail.
+
+1...Hosting files
+
+First, a web server has to store the website's files, namely all HTML documents and their related assets, including images, CSS stylesheets, JavaScript files, fonts, and video.
+
+Technically, you could host all those files on your own computer, but it's far more convenient to store files all on a dedicated web server because:
+
+A dedicated web server is typically more available (up and running).
+Excluding downtime and system troubles, a dedicated web server is always connected to the Internet.
+A dedicated web server can have the same IP address all the time. This is known as a dedicated IP address. (Not all ISPs provide a fixed IP address for home lines.)
+A dedicated web server is typically maintained by a third party.
+
+1.2-Examples of web server software
+---------------------------------------
+
+
+
+Below are examples of web server software.
+
+Apache Web Server: official Apache website.
+
+Nginx: official Nginx website.
+
+Boa Webserver: official Boa website.
+
+FoxServ Web Server: official FoxServ website.
+
+Lighttpd: official lighttpd website.
+
+Microsoft's Web Server, IIS: official IIS website.
+
+Savant: official Savant website.
+
+Tomcat: official Tomcat website.
+
+
+
 What is TCP/IP ?
 --------------
 
@@ -324,3 +390,5 @@ https://developer.mozilla.org/en-US/docs/Web/HTTP
 
 
 https://www.youtube.com/watch?v=iYM2zFP3Zn0
+
+https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_web_server
