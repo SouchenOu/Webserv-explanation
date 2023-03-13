@@ -43,7 +43,7 @@ Lorsque une URL est saisie au niveau des navigateur web client, le client http e
 
 
  🌱 La structure d'une requite HTTP:
--------------------------------
+-----------------------------------
 
 
 
@@ -135,6 +135,40 @@ il saura que :
 
 
 donc ici une requête http est envoyer au serveur consérner, aprés le serveur il va traiter la requéte et apres il va envoyer la ressouce demander (la page www.example.com/index.html)
+
+
+
+------------------------------------------------------------------------------------------
+
+
+HTTP : Hyper-text-Transfer-Protocol basically responsible for communication between web servers and clients, it is the protocol of the web, so every time you open your browser and you visit a web-page or you submit a form, or you click a button than sends some kind of ajax request or fetch request, something like that you are using HTTP and you are going through what is called the request and response cycle. You make a requeste and you get a response back that has something called headers and something called the body, and we are going to look more into that cycle in a bit.
+
+http is stateless meaning that every request is completely independent, when you make one request vesiting a web page or go to another page after that,
+or reload the page it dosent remember anyting about the previous, you can kind of look at each request as a single transactio.
+
+HTTPS: Hyper-text-Transfer-Protocol-secure(Data sent is encrypted) it basically where all the data that is sent back is encrypted by something called SSL which stands for secure sockets layer or by TLS which is transport security layer, so anytime you have users that are sending sensitive information 
+
+it should always be over https especially if it is like credit card data, social security numbers, you want to have a hight level of security fot that stuff.
+
+A lot of websites and applications now are just forcing https on every page which is a bad idea, you can do this by installing an ssl certificate on your web host, there is different level of security.
+
+
+Al right when a request is made to a server it has some kind of method attached to it, and there is more than this .
+
+
+GET: a get request is used to get or fetch data from the server, tjis could be just loading a standard HTML page, loading assets like CSS or images JSON data XML data, so everytime you visit a webpage you are making a get request to the server via HTTP.
+
+
+
+
+
+
+
+
+
+
+------------------------------------------------------------------------
+
 
 
 2: Protocole:
@@ -231,3 +265,6 @@ https://www.youtube.com/watch?v=2JYT5f2isg4
 https://www.youtube.com/watch?v=YqEqjODUkWY&list=PLPUbh_UILtZW1spXkwszDBN9YhtB0tFKC&index=2
 
 https://developer.mozilla.org/en-US/docs/Web/HTTP
+
+
+https://www.youtube.com/watch?v=iYM2zFP3Zn0
