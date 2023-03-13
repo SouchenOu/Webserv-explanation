@@ -69,6 +69,10 @@ Tomcat: official Tomcat website.
 What is TCP/IP ?
 --------------
 
+Une suite de protocoles (organisée en couche) utilisés pour le transfert des données sur internet.
+
+......En progress
+
 TCP/IP stands for Transmission Control Protocol/Internet Protocol and is a suite of communication protocols used to interconnect network devices on the internet. TCP/IP is also used as a communications protocol in a private computer network (an intranet or extranet).
 
 TCP defines how applications can create channels of communication across a network. It also manages how a message is assembled into smaller packets before they are then transmitted over the internet and reassembled in the right order at the destination address.
