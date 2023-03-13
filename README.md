@@ -397,3 +397,5 @@ https://developer.mozilla.org/en-US/docs/Web/HTTP
 https://www.youtube.com/watch?v=iYM2zFP3Zn0
 
 https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_web_server
+
+https://www.youtube.com/watch?v=_0thnFumSdA&t=41s
