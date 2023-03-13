@@ -1,5 +1,34 @@
 # Webserv-explination
 
+What is TCP/IP ?
+--------------
+
+TCP/IP stands for Transmission Control Protocol/Internet Protocol and is a suite of communication protocols used to interconnect network devices on the internet. TCP/IP is also used as a communications protocol in a private computer network (an intranet or extranet).
+
+TCP defines how applications can create channels of communication across a network. It also manages how a message is assembled into smaller packets before they are then transmitted over the internet and reassembled in the right order at the destination address.
+
+
+
+
+
+
+levels:
+
+<img width="594" alt="Screen Shot 2023-03-13 at 11 40 29 AM" src="https://user-images.githubusercontent.com/87101785/224678598-0ee5e092-87ee-4f82-9a25-de47e4ae8cf9.png">
+
+
+
+TCP/IP carefully defines how information moves from sender to receiver. First, application programs send messages or streams of data to one of the Internet Transport Layer Protocols, either the User Datagram Protocol (UDP) or the Transmission Control Protocol (TCP). These protocols receive the data from the application, divide it into smaller pieces called packets, add a destination address, and then pass the packets along to the next protocol layer, the Internet Network layer.
+
+The Internet Network layer encloses the packet in an Internet Protocol (IP) datagram, puts in the datagram header and trailer, decides where to send the datagram (either directly to a destination or else to a gateway), and passes the datagram on to the Network Interface layer.
+
+The Network Interface layer accepts IP datagrams and transmits them as frames over a specific network hardware, such as Ethernet or Token-Ring networks.
+
+What is OSI?
+-----------
+
+The OSI reference model defines how applications can communicate over a network.
+
  🌱 What is HTTP?
 ------------
 
@@ -121,6 +150,8 @@ A network protocol is an established set of rules that determine how data is tra
 
 Similar to the way that speaking the same language simplifies communication between two people, network protocols make it possible for devices to interact with each other because of predetermined rules built into devices’ software and hardware. Neither local area networks (LAN) nor wide area networks (WAN) could function the way they do today without the use of network protocols.
 
+
+Protocols are sets of rules for message formats and procedures that allow machines and application programs to exchange information. These rules must be followed by each machine involved in the communication in order for the receiving host to be able to understand the message.
 
 2.2: List of Network Protocols:
 -------------------------------
