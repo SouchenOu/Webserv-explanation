@@ -71,7 +71,14 @@ What is TCP/IP ?
 
 Une suite de protocoles (organisée en couche) utilisés pour le transfert des données sur internet.
 
-......En progress
+C'ést a dire lorsque deux ordinateur veulent communiquer entre eux via internet, les données echangées vont être mises en forme selon des règles qui sont toujours les mêmes afin que chaque machine puissent se comprendre et que le transfert des données soient fiables. Et pour bien comprendre le fonctionnement, on va voir que le TCP/IP et trés facilement comparables a l'envoi de courrier par la poste. Alors par ailleurs, sacher qu'il ya plusieur facons de voir le TCP/IP et pour ma part, j'ai choisi de présenter un modèle en 4 couche.Et le nom de tCP/IP, acronyme de Transfer Control Protocol et internet Protocol  
+
+
+
+
+
+
+
 
 TCP/IP stands for Transmission Control Protocol/Internet Protocol and is a suite of communication protocols used to interconnect network devices on the internet. TCP/IP is also used as a communications protocol in a private computer network (an intranet or extranet).
 
