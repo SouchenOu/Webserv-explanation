@@ -90,10 +90,7 @@ Enfin, chaque carte réseau qui permet de brancher l'ordinateur au réseau poss�
 
 
 
-Supposont que depuis notre navigateur web, nous voulons afficher la page web de facebook, et supposons que les ressources humains de notre entreprise est un document a demandé aux services de recrutement de Marseille
-
-
-
+Supposont que depuis notre navigateur web, nous voulons afficher la page web de facebook.
 
 Plus detaillé:
 
@@ -125,12 +122,72 @@ La couche réseau encapsule le paquet en lui ajoutant une entête avec l'adresse
 
 
 
+En bas notre trame quitte notre ordinateur et arrivent au premier routeur, la carte reseau du routeur a son adresse MAC ici
+
+
+<img width="1826" alt="Screen Shot 2023-03-14 at 2 36 22 PM" src="https://user-images.githubusercontent.com/87101785/225018286-76afee95-2b9a-4eb2-b202-d99055964fd4.png">
 
 
 
 
 
+et quand l'adresse MAC de destination est bonne , la trame est désencapsulée et l'adresse IP de destination est lue 
 
+
+<img width="1826" alt="Screen Shot 2023-03-14 at 2 36 06 PM" src="https://user-images.githubusercontent.com/87101785/225018394-48f5f077-dc54-43c7-8b72-3ae6cfd4287b.png">
+
+Alors le paquet est a nouveau  encapsulé et l'adresse MAC src est ajoutée ainsi que l'adresse MAC du prochain routeur.
+
+
+<img width="1826" alt="Screen Shot 2023-03-14 at 2 41 31 PM" src="https://user-images.githubusercontent.com/87101785/225019721-c296a409-3eed-4519-b1d7-83f7b5d55de1.png">
+
+Alors pour information, les prochaine adresse MAC sont connus par le routeur (grace a ca table de routage) .
+
+En suit la TRAME voyage et arrive au routeur suivant. L'adresse MAC est identifier 
+
+<img width="1826" alt="Screen Shot 2023-03-14 at 2 52 19 PM" src="https://user-images.githubusercontent.com/87101785/225023026-eb8c2301-d93a-4497-a8a3-9aff815d91ef.png">
+
+la trame est donc désencapsulée, 
+
+
+<img width="1826" alt="Screen Shot 2023-03-14 at 2 55 08 PM" src="https://user-images.githubusercontent.com/87101785/225023736-e7022eed-6be6-4a89-8330-968ffe89ea78.png">
+
+
+
+
+
+la lecture de l'adresse IP de destination entrain une nouvelle encapsulation ou est ajoutée l'adresse MAC de la carte reseau source et celle de destination 
+
+
+<img width="1826" alt="Screen Shot 2023-03-14 at 2 54 53 PM" src="https://user-images.githubusercontent.com/87101785/225023770-38971ce8-e2ad-4004-b5c6-3d2093cde62b.png">
+
+<img width="1826" alt="Screen Shot 2023-03-14 at 2 57 44 PM" src="https://user-images.githubusercontent.com/87101785/225024382-b8ad5301-dbdc-4f65-8dac-0a2db6954d93.png">
+
+
+aprés notre trame arrive dans le serveur de facebook, dans le serveur, comme l'adresse MAC correspond á celle de la carte réseau , la trame est désencapsulée et remontre vers la couche internet 
+
+<img width="2174" alt="Screen Shot 2023-03-14 at 3 01 46 PM" src="https://user-images.githubusercontent.com/87101785/225025419-9ffd538e-7cf9-4bad-97a1-8e5f578fbc88.png">
+
+dans notre serveur l'adresse IP etant bien celle de destination
+
+<img width="502" alt="Screen Shot 2023-03-14 at 3 04 38 PM" src="https://user-images.githubusercontent.com/87101785/225026137-47d62a57-c044-4ac4-8d03-366c1ed9a9b8.png">
+
+le paquet est cette fois, lui aussi désencapsulé et remonte vers la couche transport  
+
+<img width="502" alt="Screen Shot 2023-03-14 at 3 06 22 PM" src="https://user-images.githubusercontent.com/87101785/225026655-733f3561-d914-41ad-a7de-67caf64cbea9.png">
+
+La couche transport voire que les données sont adressées au port 80, c'ést a dire je vous rappele l'application du serveur web, le segment est alors desencapsulé et remonte a la couche application  
+
+<img width="502" alt="Screen Shot 2023-03-14 at 3 09 16 PM" src="https://user-images.githubusercontent.com/87101785/225027493-74dddca0-c892-49ec-8c04-b76faa3fc531.png">
+
+
+et a la fin la couche application transmet la requete a l'application du serveur web.
+
+
+Alors ! Les message sont arrivés au destinataire
+
+
+------------------------------------------------------------------------------------------------------------------------
 
 TCP/IP stands for Transmission Control Protocol/Internet Protocol and is a suite of communication protocols used to interconnect network devices on the internet. TCP/IP is also used as a communications protocol in a private computer network (an intranet or extranet).
 
