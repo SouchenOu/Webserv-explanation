@@ -112,6 +112,20 @@ Ce nouvel ensemble de données est alors appelé un "Segment"
 
 <img width="629" alt="Screen Shot 2023-03-14 at 12 10 29 PM" src="https://user-images.githubusercontent.com/87101785/224983522-f8098860-01eb-4380-a777-821dfc1bb797.png">
 
+Dans lordinateur, le segment est encapsulé par la couche 2 "internet" qui ajoute ladresse IP de destination(Dont cest lasresse IP du serveur qui héberge la page web du site facebook) et ladresse IP source (Cest a dire adresse IP de notre ordinateur). A ce niveau, lensemble de cette données et appelée "paquet". 
+
+<img width="629" alt="Screen Shot 2023-03-14 at 12 15 43 PM" src="https://user-images.githubusercontent.com/87101785/224984687-76f1a525-771f-4b5b-8e79-3cbb3d92b3a7.png">
+
+
+La couche reseau encapsule le paquet en lui ajoutant une entête avec l'adresse MAC de la carte réseau de destinations du prochain routeur et l'adresse MAC de la carte réseau de notre ordinateur, et ici on a ce que lon appelle une "trame" . Alors, voyons la suite ou les messages
+
+
+<img width="1772" alt="Screen Shot 2023-03-14 at 12 20 24 PM" src="https://user-images.githubusercontent.com/87101785/224985821-3968746f-1e6e-4433-8c6e-d2ffb5e9243a.png">
+
+
+
+
+
 
 
 
