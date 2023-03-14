@@ -13,6 +13,25 @@ The Internet is the backbone of the Web, the technical infrastructure that makes
 
 Deeper dive:
 
+A simple network
+
+When two computers need to communicate, you have to link them, either physically (usually with an Ethernet cable) or wirelessly (for example with Wi-Fi or Bluetooth systems). All modern computers can sustain any of those connections.
+
+<img width="639" alt="Screen Shot 2023-03-14 at 6 17 16 PM" src="https://user-images.githubusercontent.com/87101785/225086696-5bb1907e-d76f-4b43-a92a-32c87ec40baa.png">
+
+Such a network is not limited to two computers. You can connect as many computers as you wish. But it gets complicated quickly. If you're trying to connect, say, ten computers, you need 45 cables, with nine plugs per computer!
+
+<img width="639" alt="Screen Shot 2023-03-14 at 6 20 11 PM" src="https://user-images.githubusercontent.com/87101785/225086710-fbb0ce41-849a-4ed3-85e4-aa6691b2a3b8.png">
+
+
+To solve this problem, each computer on a network is connected to a special tiny computer called a router. This router has only one job: like a signaler at a railway station, it makes sure that a message sent from a given computer arrives at the right destination computer. To send a message to computer B, computer A must send the message to the router, which in turn forwards the message to computer B and makes sure the message is not delivered to computer C.
+
+Once we add a router to the system, our network of 10 computers only requires 10 cables: a single plug for each computer and a router with 10 plugs.
+
+<img width="639" alt="Screen Shot 2023-03-14 at 6 22 37 PM" src="https://user-images.githubusercontent.com/87101785/225087284-f47815f2-2574-438c-a57b-a9068e3e4f0d.png">
+
+<img width="639" alt="Screen Shot 2023-03-14 at 6 34 34 PM" src="https://user-images.githubusercontent.com/87101785/225090304-98770158-9cb2-4e2a-a033-231729fcbd41.png">
+
 
 
 
