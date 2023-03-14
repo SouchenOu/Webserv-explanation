@@ -71,7 +71,7 @@ What is TCP/IP ?
 
 Une suite de protocoles (organisée en couche) utilisés pour le transfert des données sur internet.
 
-C'ést a dire lorsque deux ordinateur veulent communiquer entre eux via internet, les données echangées vont être mises en forme selon des règles qui sont toujours les mêmes afin que chaque machine puissent se comprendre et que le transfert des données soient fiables. Et pour bien comprendre le fonctionnement, on va voir que le TCP/IP et trés facilement comparables a l'envoi de courrier par la poste. Alors par ailleurs, sacher qu'il ya plusieur facons de voir le TCP/IP et pour ma part, j'ai choisi de présenter un modèle en 4 couche.Et le nom de tCP/IP, acronyme de Transfer Control Protocol et internet Protocol  est en réalité le nom des protocoles qui sont le plus souvent utilisés dans la deuxième et la troisième couche.
+C'ést a dire lorsque deux ordinateur veulent communiquer entre eux via internet, les données echangées vont être mises en forme selon des règles qui sont toujours les mêmes afin que chaque machine puissent se comprendre et que le transfert des données soient fiables. Et pour bien comprendre le fonctionnement, on va voir que le TCP/IP et trés facilement comparables a l'envoi de courrier par la poste. Alors par ailleurs, sacher qu'il ya plusieur facons de voir le TCP/IP et pour ma part, j'ai choisi de présenter un modèle en 4 couche.Et le nom de TCP/IP, acronyme de Transfer Control Protocol et internet Protocol  est en réalité le nom des protocoles qui sont le plus souvent utilisés dans la deuxième et la troisième couche.
 
 
 <img width="530" alt="Screen Shot 2023-03-14 at 10 27 36 AM" src="https://user-images.githubusercontent.com/87101785/224956594-612ce051-2a22-47c7-88cb-b12ed44497c0.png">
@@ -80,17 +80,17 @@ C'ést a dire lorsque deux ordinateur veulent communiquer entre eux via internet
 
 
 
-Lorsqu'un message arrive dans un ordinateur, de savoir a quelle application s'addresse le message. Par example, le port 80 identifie une application de serveurs web. La machine elle même doit être identifiée, on utilise pour cela la fameuse adresse IP .elle permet, alors de l'acheminement de  données sur le réseau, de déterminer á chaque embranchement, en fonction de cette adresse IP, de savoir quel chemin emprunter
+Lorsqu'un message arrive dans un ordinateur, de savoir a quelle application s'addresse le message. Par example, le port 80 identifie une application de serveurs web. La machine elle même doit être identifiée, on utilise pour cela la fameuse adresse IP, elle permet, alors de l'acheminement de  données sur le réseau, de déterminer á chaque embranchement, en fonction de cette adresse IP, de savoir quel chemin emprunter.
 
 
 <img width="2539" alt="Screen Shot 2023-03-14 at 11 11 17 AM" src="https://user-images.githubusercontent.com/87101785/224969414-f420265b-fdf4-4b61-a6c8-f842e16e575f.png">
 
 
-Enfin, chaque carte réseau qui permet de brancher l'ordinateur au réseau possède elle aussi une identificateur ->l'adresse MAC(Media access control) qui est ladresse physique d'une machine.Elle permet dans un reseau didentifier de manière unique.
+Enfin, chaque carte réseau qui permet de brancher l'ordinateur au réseau possède elle aussi une identificateur ->l'adresse MAC(Media access control) qui est l'adresse physique d'une machine, Elle permet dans un reseau d'identifier de manière unique.
 
 
 
-supposont que depuis notre navigateur web, nous voulons afficher la page web de facebook, et supposons que les ressources humains de notre entreprise est un document a demandé aux services de recrutement de Marseille
+Supposont que depuis notre navigateur web, nous voulons afficher la page web de facebook, et supposons que les ressources humains de notre entreprise est un document a demandé aux services de recrutement de Marseille
 
 
 
@@ -98,12 +98,12 @@ supposont que depuis notre navigateur web, nous voulons afficher la page web de 
 Plus detaillé:
 
 
-sur votre ordinateur on tape www.facebook.com puis enter, la couche application va traduire cette requête par "GET" qui signifier obtenir suivi de l'adresse du site web sous forme dadresse IP.
+Sur votre ordinateur on tape www.facebook.com puis Enter, la couche application va traduire cette requête par "GET" qui signifier (obtenir) suivi de l'adresse du site web sous forme d'adresse IP.
 
 <img width="629" alt="Screen Shot 2023-03-14 at 11 36 48 AM" src="https://user-images.githubusercontent.com/87101785/224974651-40711a39-a90c-4a97-91e1-b449963f3732.png">
 
 
-dans notre ordinateur les données sont traitées par la couche "transport" qui va ajouter une en tête avoec la port source, vous souvenez c'est le numero qui identifier les applications, ici le port 1337 identifier notre navigateur web. Il est ajouté le port de destination (80 c'est celui qui identifier une application de serveur web) le message est numéroté et il est prévu un FLAG ou drapeau en francais qui servira pour laccusé de reception. ici cette case est pour le moment inutilisée. A ce niveau là, on dit que les données ont été encapsulées, c'est a dire que l'on a ajouter une entête "transport" au message "GET http". 
+Dans notre ordinateur les données sont traitées par la couche "transport" qui va ajouter une en tête avec la port source, vous souvenez c'est le numéro qui identifier les applications, ici le port 1337 identifier notre navigateur web, Il est ajouté le port de destination (80 c'est celui qui identifier une application de serveur web) le message est numéroté et il est prévu un FLAG ou (drapeau) en francais qui servira pour l'accusé de reception,( Ici cette case est pour le moment inutilisée). A ce niveau là, on dit que les données ont été encapsulées, c'est a dire que l'on a ajouter une entête "transport" au message "GET http". 
 
 
 <img width="629" alt="Screen Shot 2023-03-14 at 11 42 48 AM" src="https://user-images.githubusercontent.com/87101785/224976220-9435ddaa-6d07-4e47-b987-abdd5edc254a.png">
@@ -112,12 +112,12 @@ Ce nouvel ensemble de données est alors appelé un "Segment"
 
 <img width="629" alt="Screen Shot 2023-03-14 at 12 10 29 PM" src="https://user-images.githubusercontent.com/87101785/224983522-f8098860-01eb-4380-a777-821dfc1bb797.png">
 
-Dans lordinateur, le segment est encapsulé par la couche 2 "internet" qui ajoute ladresse IP de destination(Dont cest lasresse IP du serveur qui héberge la page web du site facebook) et ladresse IP source (Cest a dire adresse IP de notre ordinateur). A ce niveau, lensemble de cette données et appelée "paquet". 
+Dans l'ordinateur, le segment est encapsulé par la couche 2 "internet" qui ajoute l'adresse IP de destination(Dont cette cas c'est l'adresse IP du serveur qui héberge la page web du site facebook) et l'adresse IP source (C'est a dire l'adresse IP de notre ordinateur). A ce niveau, l'ensemble de cette données et appelée "paquet". 
 
 <img width="629" alt="Screen Shot 2023-03-14 at 12 15 43 PM" src="https://user-images.githubusercontent.com/87101785/224984687-76f1a525-771f-4b5b-8e79-3cbb3d92b3a7.png">
 
 
-La couche reseau encapsule le paquet en lui ajoutant une entête avec l'adresse MAC de la carte réseau de destinations du prochain routeur et l'adresse MAC de la carte réseau de notre ordinateur, et ici on a ce que lon appelle une "trame" . Alors, voyons la suite ou les messages
+La couche réseau encapsule le paquet en lui ajoutant une entête avec l'adresse MAC de la carte réseau de destinations du prochain routeur et l'adresse MAC de la carte réseau de notre ordinateur, et ici on a ce que l'on appelle une "Trame". Alors, voyons la suite ou les messages
 
 
 <img width="1772" alt="Screen Shot 2023-03-14 at 12 20 24 PM" src="https://user-images.githubusercontent.com/87101785/224985821-3968746f-1e6e-4433-8c6e-d2ffb5e9243a.png">
