@@ -80,6 +80,43 @@ C'ést a dire lorsque deux ordinateur veulent communiquer entre eux via internet
 
 
 
+Lorsqu'un message arrive dans un ordinateur, de savoir a quelle application s'addresse le message. Par example, le port 80 identifie une application de serveurs web. La machine elle même doit être identifiée, on utilise pour cela la fameuse adresse IP .elle permet, alors de l'acheminement de  données sur le réseau, de déterminer á chaque embranchement, en fonction de cette adresse IP, de savoir quel chemin emprunter
+
+
+<img width="2539" alt="Screen Shot 2023-03-14 at 11 11 17 AM" src="https://user-images.githubusercontent.com/87101785/224969414-f420265b-fdf4-4b61-a6c8-f842e16e575f.png">
+
+
+Enfin, chaque carte réseau qui permet de brancher l'ordinateur au réseau possède elle aussi une identificateur ->l'adresse MAC(Media access control) qui est ladresse physique d'une machine.Elle permet dans un reseau didentifier de manière unique.
+
+
+
+supposont que depuis notre navigateur web, nous voulons afficher la page web de facebook, et supposons que les ressources humains de notre entreprise est un document a demandé aux services de recrutement de Marseille
+
+
+
+
+Plus detaillé:
+
+
+sur votre ordinateur on tape www.facebook.com puis enter, la couche application va traduire cette requête par "GET" qui signifier obtenir suivi de l'adresse du site web sous forme dadresse IP.
+
+<img width="629" alt="Screen Shot 2023-03-14 at 11 36 48 AM" src="https://user-images.githubusercontent.com/87101785/224974651-40711a39-a90c-4a97-91e1-b449963f3732.png">
+
+
+dans notre ordinateur les données sont traitées par la couche "transport" qui va ajouter une en tête avoec la port source, vous souvenez c'est le numero qui identifier les applications, ici le port 1337 identifier notre navigateur web. Il est ajouté le port de destination (80 c'est celui qui identifier une application de serveur web) le message est numéroté et il est prévu un FLAG ou drapeau en francais qui servira pour laccusé de reception. ici cette case est pour le moment inutilisée. A ce niveau là, on dit que les données ont été encapsulées, c'est a dire que l'on a ajouter une entête "transport" au message "GET http". 
+
+
+<img width="629" alt="Screen Shot 2023-03-14 at 11 42 48 AM" src="https://user-images.githubusercontent.com/87101785/224976220-9435ddaa-6d07-4e47-b987-abdd5edc254a.png">
+
+Ce nouvel ensemble de données est alors appelé un "Segment"
+
+<img width="629" alt="Screen Shot 2023-03-14 at 12 10 29 PM" src="https://user-images.githubusercontent.com/87101785/224983522-f8098860-01eb-4380-a777-821dfc1bb797.png">
+
+
+
+
+
+
 
 TCP/IP stands for Transmission Control Protocol/Internet Protocol and is a suite of communication protocols used to interconnect network devices on the internet. TCP/IP is also used as a communications protocol in a private computer network (an intranet or extranet).
 
