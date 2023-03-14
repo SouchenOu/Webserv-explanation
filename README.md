@@ -187,6 +187,57 @@ et a la fin la couche application transmet la requete a l'application du serveur
 Alors ! Les message sont arrivés au destinataire
 
 
+
+
+
+
+
+mais comment l'expéditeur va t-il le savoir?
+
+
+les port source et destination sont inversés, le numero du message est augmenté de 1, donc il passe a 2, cest la maniere de savoir que cet accusé de réception fait suite aux messages précédents, et le FLAG va etre maintenant utilisé en y inscrivant ACK qui signifie en anglais (Acknowledgment)
+
+<img width="502" alt="Screen Shot 2023-03-14 at 3 33 04 PM" src="https://user-images.githubusercontent.com/87101785/225034360-dc7f859e-d5c7-4060-955f-3fd49779c456.png">
+
+<img width="502" alt="Screen Shot 2023-03-14 at 3 33 36 PM" src="https://user-images.githubusercontent.com/87101785/225034559-a6c99cd1-7fa9-4a07-83ec-1dbbc5e29b47.png">
+
+<img width="502" alt="Screen Shot 2023-03-14 at 3 33 50 PM" src="https://user-images.githubusercontent.com/87101785/225034571-d2ad2542-4af5-4459-b451-c41903db77b2.png">
+
+
+c'ést a dire "accusé de réception", sous entendu "jai bien recu le message". Alors ce message est vide, vous aurez remarqué ici que la partie "application" est vide cest soulement lenveloppent qui va voyager donc ce message vide va être a son tour encapsulé pr la couche internet 
+
+<img width="502" alt="Screen Shot 2023-03-14 at 3 36 26 PM" src="https://user-images.githubusercontent.com/87101785/225035307-dfd3c2b4-1edf-48b6-830a-d0b3ce82f830.png">
+
+
+et aprés l'adresse IP de destination est inversée avec l'adresse IP source 
+
+
+
+<img width="502" alt="Screen Shot 2023-03-14 at 3 39 02 PM" src="https://user-images.githubusercontent.com/87101785/225036071-a61a70ee-c764-49b2-ac59-70db9307db4f.png">
+
+
+
+
+
+et puis le  paquet est encapsulé par la couche "réseau"
+
+
+<img width="1606" alt="Screen Shot 2023-03-14 at 3 40 11 PM" src="https://user-images.githubusercontent.com/87101785/225036537-e3608c02-a288-45c9-b5ad-8b8778a4b527.png">
+
+
+aprés l'adresse MAC sont mis a jour puis la trame repart sur réseau internet jusqu'a notre ordinateur
+
+<img width="1606" alt="Screen Shot 2023-03-14 at 3 42 01 PM" src="https://user-images.githubusercontent.com/87101785/225037182-4eda0f25-5a75-435d-8753-bd118b2d10ea.png">
+
+
+
+
+
+<img width="2523" alt="Screen Shot 2023-03-14 at 3 43 31 PM" src="https://user-images.githubusercontent.com/87101785/225037539-23728bbe-cbce-4199-9e30-4fdfbbbef906.png">
+
+
+
+
 ------------------------------------------------------------------------------------------------------------------------
 
 TCP/IP stands for Transmission Control Protocol/Internet Protocol and is a suite of communication protocols used to interconnect network devices on the internet. TCP/IP is also used as a communications protocol in a private computer network (an intranet or extranet).
