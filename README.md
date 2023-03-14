@@ -1,6 +1,21 @@
 # Webserv-explination
 
 
+
+
+
+
+How internet works
+-------------------
+
+The Internet is the backbone of the Web, the technical infrastructure that makes the Web possible. At its most basic, the Internet is a large network of computers which communicate all together.
+
+
+Deeper dive:
+
+
+
+
 1: Web server
 -------------
 
