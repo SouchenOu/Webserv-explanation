@@ -738,7 +738,22 @@ TCP est un protocole fiable de bout en bout orienté connexion pour garantir la 
 
 UDP est un protocole de transmission simple qui fournit un service non fiable. Cela ne signifie pas que UDP ne fournira pas les données mais il n’y a pas de mécanismes pour surveiller le contrôle de congestion ou la perte de paquets, etc. Comme c’est simple, cela évite le traitement du congestion. Les applications en temps réel utilisent principalement UDP car la suppression des paquets est préférable. Un exemple typique est celui des flux de média (Streaming)
 
-🌱10. Ressources:
+🌱10. What is NGINX:
+--------------------
+
+
+
+
+🌱11.what is Telnet:
+--------------------
+
+
+
+🌱 What is CGI:
+-----------------
+
+
+🌱12. Ressources:
 ------------
 
 https://www.youtube.com/watch?v=auhEJDGHI8Q
