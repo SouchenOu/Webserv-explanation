@@ -749,6 +749,12 @@ Nginx act like a proxy --> Load balancing , backend routing, Caching
 and a web server --->  Serves web content
 
 
+
+web server controls how users access the application through HTTP request (accessing a website means making a request to server) and NGINX is known to handle more than 10.000 requests at once), so a lot of companies like google, facebook, and linkdin are known to use nginx as their web server because they have a lot of users trying to access their services at once, onother cool aspect of nginx is that it works a reverse proxy server, that means a direct client is request to the appropriate applications.
+
+
+
+
 10.1 Why Nginx called a reverse proxy ?
 --------------------------------------
 
@@ -789,12 +795,22 @@ why would a website use a reverse proxy?
 🌱11.what is Telnet:
 --------------------
 
+Telnet is a terminal emulation program that is used to access remote servers 
+
+<img width="681" alt="Screen Shot 2023-03-16 at 3 30 49 PM" src="https://user-images.githubusercontent.com/87101785/225649618-1748f927-bda2-4227-b614-4dcb2a2de519.png">
+
+it is a simple command line tool that runs on your computer , and it will allow you to send commands remotely to a server and administer that server just as if you were sitting in front of it 
+
+<img width="681" alt="Screen Shot 2023-03-16 at 3 33 16 PM" src="https://user-images.githubusercontent.com/87101785/225650280-4ec064c7-b4fe-428a-817c-d6fa0e663469.png">
+
+
+so when you connect remotely to a server using telnet, you would just use commands with a keyboard to tell that server what to do . so you can commands to run rograms, create folders, delete files, create files, tranfer files, browse directories, so you can do eveything even if you are a thousand miles away from that server. 
 
 
 🌱 12.What is CGI:
 -----------------
 
-
+CGI is a standard method used to generate dynamic content on web pages. CGI stands for Common Gateway Interface and provides an interface between the HTTP server and programs generating web content. These programs are better known as CGI scripts. They are written in a scripting language. The Network Component provides such a scripting language. The HTTP server processes the script source file line by line and calls the CGI functions as needed. The output from a CGI function is sent to the web client (browser) as a part of the web page.
 
 
 🌱 13. what is a proxy server?
