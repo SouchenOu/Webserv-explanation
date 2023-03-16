@@ -310,6 +310,22 @@ The Network Interface layer accepts IP datagrams and transmits them as frames ov
 
 The OSI reference model defines how applications can communicate over a network.
 
+
+TCP connection establishment :
+--------------------------------
+
+When two hosts communicate using tcp , a connection is established before data can be extchanged.
+
+To establish the connection, hosts use a three-way handshake flagging with the SYN and ACK control in the TCP header.
+
+The three-way  handshake:
+
+. Establishes that the destination device is present on the network.
+
+. Verifies that the destination device has an active service and is accepting requests on specified destination port number.
+
+. Both the client and the destination (server) must allocate resources to keep track of the connection - more resource intensive on the server side when it has multiple client.
+
 🌱 5. TCP and UDP sockets:
 -------------------------
 
