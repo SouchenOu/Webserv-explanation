@@ -420,6 +420,10 @@ donc ici une requête http est envoyer au serveur consérner, aprés le serveur 
 ------------------------------------------------------------------------------------------
 
 
+Hypertext Transfer Protocol (HTTP) is an application-layer protocol for transmitting hypermedia documents, such as HTML. It was designed for communication between web browsers and web servers, but it can also be used for other purposes. HTTP follows a classical client-server model, with a client opening a connection to make a request, then waiting until it receives a response. HTTP is a stateless protocol, meaning that the server does not keep any data (state) between two requests.
+
+
+
 HTTP : Hyper-text-Transfer-Protocol basically responsible for communication between web servers and clients, it is the protocol of the web, so every time you open your browser and you visit a web-page or you submit a form, or you click a button than sends some kind of ajax request or fetch request, something like that you are using HTTP and you are going through what is called the request and response cycle. You make a requeste and you get a response back that has something called headers and something called the body, and we are going to look more into that cycle in a bit.
 
 http is stateless, meaning that every request is completely independent, when you make one request visiting a web page or go to another page after that,
