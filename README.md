@@ -819,6 +819,39 @@ CGI is a standard method used to generate dynamic content on web pages. CGI stan
 A proxy server is a system or router that provides a gateway between users and the internet.Therefore, it helps prevent cyber attackers from entering a private network.
 
 
+
+
+HTTP server: Everyrhing you need to know to build a simple HTTP server from scratch :
+--------------------------------------------------------------------------------------
+
+
+
+1:  implementing TCP:
+
+to implement Tcp we have to learn TCP socket programming.
+
+---> programming with TCP/ip sockets:
+
+There are a few steps involved in using sockets
+
+1: Create the socket
+
+2: Identify the socket
+
+3: On the server, wait for an incomint connection
+
+4: Send and receive messages
+
+5: Close the socket
+
+
+
+
+
+
+
+
+
 🌱14. Ressources:
 -----------------
 
