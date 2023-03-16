@@ -308,6 +308,63 @@ What is OSI?
 
 The OSI reference model defines how applications can communicate over a network.
 
+TCP and UDP sockets:
+--------------------
+
+In this example we have two clients connected to the same web server and just so happens they are both using the same port numbers 
+49888
+
+<img width="753" alt="Screen Shot 2023-03-16 at 9 26 33 AM" src="https://user-images.githubusercontent.com/87101785/225558182-415251fe-9300-4fa5-a0ef-5b0e5759af9f.png">
+
+So how does the server know which port number to associate with what which device ?
+
+What makes each connection unique ?
+
+okey
+
+the way that it does this is the connection is divided defined by a pair of numbers known as sockets
+
+the source IP address and source port from the client to the server and the destination IP address and destination port number server, but this is all from the perspective of whoever we are looking at,so from the source IP address and source port number this is where the segment coming from,
+it is coming from this IP address and this spesific port on the client.
+
+--->So combining the transport layer port number and the network layer address uniquely identifies a particular application process running on an individual host device.
+
+"This combination is called a socket."
+
+--> A socket pair, consisting of the source and destination IP addresses and port numbers, is also unique and identifies the specific conversation between the two hosts.
+
+
+Let's take an example:
+
+
+A client socket look like this, representing the source IP address and source port number
+
+192.168.1.101:49888
+
+<img width="753" alt="Screen Shot 2023-03-16 at 9 55 04 AM" src="https://user-images.githubusercontent.com/87101785/225564930-51ba1ac8-99ed-4f4c-8b19-09d3a0683695.png">
+
+
+So this is the client socket with the source IP address and the source port number, this identifies the where the application came from, it come from a spesific IP address.
+
+The socket on a web server might be, representing the destination IP adddress and destination port number 
+
+192.133.219.25:80
+
+<img width="753" alt="Screen Shot 2023-03-16 at 9 58 55 AM" src="https://user-images.githubusercontent.com/87101785/225565958-3a37fb48-8014-429b-900a-e2c684f206ff.png">
+
+--->Together, these two sockets combine to form a socket pair 192.168.1.101:49888 ,  192.133.219.25:80 
+
+
+netstat -n command shows us this socket pair so it shows us any of the TCP and UDP processes that we have currenty running on our system 
+
+<img width="601" alt="Screen Shot 2023-03-16 at 10 08 04 AM" src="https://user-images.githubusercontent.com/87101785/225568351-27c259d7-4ab2-4fd5-aff4-48bfa2ed5617.png">
+
+
+<img width="1975" alt="Screen Shot 2023-03-16 at 10 08 48 AM" src="https://user-images.githubusercontent.com/87101785/225568595-2622f3ac-50bc-4ff8-9458-387edef2072e.png">
+
+
+
+
  🌱 What is HTTP?
 ------------
 
