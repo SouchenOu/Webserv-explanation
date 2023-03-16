@@ -360,6 +360,10 @@ netstat -n command shows us this socket pair so it shows us any of the TCP and U
 <img width="601" alt="Screen Shot 2023-03-16 at 10 08 04 AM" src="https://user-images.githubusercontent.com/87101785/225568351-27c259d7-4ab2-4fd5-aff4-48bfa2ed5617.png">
 
 
+
+
+ The server creates a socket, attaches it to a network port addresses then waits for the client to contact it. The client creates a socket and then attempts to connect to the server socket. When the connection is established, transfer of data takes place.
+ 
 <img width="1975" alt="Screen Shot 2023-03-16 at 10 08 48 AM" src="https://user-images.githubusercontent.com/87101785/225568595-2622f3ac-50bc-4ff8-9458-387edef2072e.png">
 
 
