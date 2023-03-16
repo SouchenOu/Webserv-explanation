@@ -366,7 +366,72 @@ netstat -n command shows us this socket pair so it shows us any of the TCP and U
  
 <img width="1975" alt="Screen Shot 2023-03-16 at 10 08 48 AM" src="https://user-images.githubusercontent.com/87101785/225568595-2622f3ac-50bc-4ff8-9458-387edef2072e.png">
 
+<img width="650" alt="Screen Shot 2023-03-16 at 10 50 26 AM" src="https://user-images.githubusercontent.com/87101785/225579973-504be38b-deaa-4440-827e-4252c8e4e8a6.png">
 
+
+Types of sockets
+-----------------
+
+
+Types of Sockets : There are two types of Sockets: the datagram socket and the stream socket.
+
+
+Datagram Socket : This is a type of network which has connection less point for sending and receiving packets. It is similar to mailbox. The letters (data) posted into the box are collected and delivered (transmitted) to a letterbox (receiving socket).
+
+
+Stream Socket : In Computer operating system, a stream socket is type of interprocess communications socket or network socket which provides a connection-oriented, sequenced, and unique flow of data without record boundaries with well defined mechanisms for creating and destroying connections and for detecting errors. It is similar to phone. A connection is established between the phones (two ends) and a conversation (transfer of data) takes place.
+
+
+
+What happens when tou type a URL into your browser?
+---------------------------------------------------
+
+Here Bob enters a URL into the browser and click Enter.
+
+
+<img width="460" alt="Screen Shot 2023-03-16 at 11 07 10 AM" src="https://user-images.githubusercontent.com/87101785/225584186-3a3f8653-a778-486d-a1cc-3462fac3654d.png">
+
+
+What happens next?
+
+Let's first discuss what a URL is ?  URL stands for universal resource locator, and it has four parts:
+
+<img width="610" alt="Screen Shot 2023-03-16 at 11 13 25 AM" src="https://user-images.githubusercontent.com/87101785/225585757-285de5a4-a166-4b97-b745-c1f0254a167a.png">
+
+
+They together specify the resource on the server we want to load.
+
+
+
+so okey Let's continue -->
+
+Bob entered the url into the browser, what happend next, Well the browser needs to know  how to reach the server, in this case "example.com".
+
+This done with a process called DNS lookup (DNS stands for Domain Name system) think of it as a phone book of the internet. DNS translates domain names to IP addresses so browsers can load resources. It is an interesting service in and off.
+
+Finally the browser has the IP address of the server, in our case again example.com, next the browser establishes a TCP connection with the server using the IP address it got for it.
+
+<img width="557" alt="Screen Shot 2023-03-16 at 11 23 35 AM" src="https://user-images.githubusercontent.com/87101785/225588125-c4b729d7-9a08-4f2a-bd8a-ef4dfd3e2b6b.png">
+
+
+
+Now there is a handshake involved in establishing a TCP connection. It takes several network round trips for this to complete. To keep the loading process fast, modern browsers use something called a keep alive connection to try to reuse an established TCP connaction to the server as much as possible.
+
+one thing to note is that if the protocol is https the process of establishing a new connection is even more involved. It requires a complicated process called SSL/TLS handshake to establish the encrypted connection between the browser and the server.
+
+Finally the browser sends an HTTP request to the server over the established TCP connection 
+
+<img width="557" alt="Screen Shot 2023-03-16 at 11 30 21 AM" src="https://user-images.githubusercontent.com/87101785/225589841-42a8dfed-c880-44c7-a79e-3020c810acaa.png">
+
+
+HTTP is a very simple protocol. The server processes the request and sends back a response 
+
+<img width="557" alt="Screen Shot 2023-03-16 at 11 31 20 AM" src="https://user-images.githubusercontent.com/87101785/225590097-1d9664da-ff6d-4e74-9abd-771573ea13b7.png">
+
+
+The browser receives the response and renders html content
+
+<img width="679" alt="Screen Shot 2023-03-16 at 11 32 07 AM" src="https://user-images.githubusercontent.com/87101785/225590339-2d4a4c01-4748-4a40-a788-fa2891b1b7ea.png">
 
 
  🌱 What is HTTP?
