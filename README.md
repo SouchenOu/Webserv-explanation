@@ -869,3 +869,8 @@ https://www.youtube.com/watch?v=iYM2zFP3Zn0
 https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_web_server
 
 https://www.youtube.com/watch?v=_0thnFumSdA&t=41s
+
+
+web serve from scratch
+
+https://www.youtube.com/watch?v=YwHErWJIh6Y&t=5s
