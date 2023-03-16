@@ -741,7 +741,49 @@ UDP est un protocole de transmission simple qui fournit un service non fiable. C
 🌱10. What is NGINX:
 --------------------
 
+nginx [engine x] is an HTTP and reverse proxy server.
 
+
+Nginx act like a proxy --> Load balancing , backend routing, Caching 
+
+and a web server --->  Serves web content
+
+
+10.1 Why Nginx called a reverse proxy ?
+--------------------------------------
+
+
+What is a proxy anyways?
+
+<img width="607" alt="Screen Shot 2023-03-16 at 2 28 13 PM" src="https://user-images.githubusercontent.com/87101785/225631753-d30b04fd-2fcd-4fa8-add7-37a0376934a0.png">
+
+There is two common types pf proxy are forward proxy and reverse proxy :
+
+
+
+📈 Forward proxy:
+
+a forward proxy is a server that sits between a group of client machines and the internet, when those clients make requests to websites on the internet, the forward proxy acts as a middleman intercepts those requests and talks to web servers on behalf of those client machines.
+
+Why would anyone want to do that ?
+
+Here are a few common reasons:
+
+1. a forward proxy protects the client is online identity, by using a forward proxy to connect a website, the IP address of the client is hidden from the server, only the IP address of the forward proxy is visible to the servers, so it would be harder to trace back to the client.
+
+2. a forward proxy can be used to block access to certain content, this is not uncommon for schools and businesses to configure ther networks to connect all clients to the web through a proxy and apply filtering rules to disallow sites like social networks. 
+
+📈 reverse proxy:
+
+A reverse proxy sits between the internet and the web servers, it intercepts the requests from clients and talks to the web server on behalf of the clients
+
+why would a website use a reverse proxy?
+
+1. a reverse proxy could be used to protect a website, the website is IP addresses are hidden behind the reverse proxy and are not relealed to the clients, this makes it much harder to target a DDos attack against a website.
+
+2. a reverse proxy is used for load balancing
+ 
+3. a reverse proxy can balance a large amount of incoming requests by distributing the traffic to a large pool of web servers
 
 
 🌱11.what is Telnet:
@@ -749,12 +791,20 @@ UDP est un protocole de transmission simple qui fournit un service non fiable. C
 
 
 
-🌱 What is CGI:
+🌱 12.What is CGI:
 -----------------
 
 
-🌱12. Ressources:
-------------
+
+
+🌱 13. what is a proxy server?
+-----------------------------
+
+A proxy server is a system or router that provides a gateway between users and the internet.Therefore, it helps prevent cyber attackers from entering a private network.
+
+
+🌱14. Ressources:
+-----------------
 
 https://www.youtube.com/watch?v=auhEJDGHI8Q
 
