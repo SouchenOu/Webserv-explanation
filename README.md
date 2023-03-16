@@ -5,10 +5,10 @@
 
 
 
-How internet works
--------------------
+🌱 1. How internet works
+-------------------------
 
-The Internet is the backbone of the Web, the technical infrastructure that makes the Web possible. At its most basic, the Internet is a large network of computers which communicate all together.
+The Internet is the backbone of the Web, the technical infrastructure that makes the Web possible. At it's most basic, the Internet is a large network of computers which communicate all together.
 
 
 Deeper dive:
@@ -30,15 +30,17 @@ Once we add a router to the system, our network of 10 computers only requires 10
 
 <img width="639" alt="Screen Shot 2023-03-14 at 6 22 37 PM" src="https://user-images.githubusercontent.com/87101785/225087284-f47815f2-2574-438c-a57b-a9068e3e4f0d.png">
 
+
+
 <img width="639" alt="Screen Shot 2023-03-14 at 6 34 34 PM" src="https://user-images.githubusercontent.com/87101785/225090304-98770158-9cb2-4e2a-a033-231729fcbd41.png">
 
 
 
 
-1: Web server
+🌱 2 : Web server
 -------------
 
-1.1-What is web server?
+2.1-What is web server?
 -----------------------
 
 The term web server can refer to hardware or software, or both of them working together.
@@ -75,7 +77,7 @@ Excluding downtime and system troubles, a dedicated web server is always connect
 A dedicated web server can have the same IP address all the time. This is known as a dedicated IP address. (Not all ISPs provide a fixed IP address for home lines.)
 A dedicated web server is typically maintained by a third party.
 
-1.2-Examples of web server software
+2.2-Examples of web server software
 ---------------------------------------
 
 
@@ -100,8 +102,8 @@ Tomcat: official Tomcat website.
 
 
 
-What is TCP/IP ?
---------------
+🌱 3 .What is TCP/IP ?
+-----------------------
 
 Une suite de protocoles (organisée en couche) utilisés pour le transfert des données sur internet.
 
@@ -129,7 +131,7 @@ Supposont que depuis notre navigateur web, nous voulons afficher la page web de 
 Plus detaillé:
 
 
-Sur votre ordinateur on tape www.facebook.com puis Enter, la couche application va traduire cette requête par "GET" qui signifier (obtenir) suivi de l'adresse du site web sous forme d'adresse IP.
+Sur votre ordinateur on tape www.facebook.com puis Enter, la couche application va traduire cette requête par "GET" qui signifier (obtenir) suivi de l'adresse du site web sous forme d'adresse IP(by using DNS).
 
 <img width="629" alt="Screen Shot 2023-03-14 at 11 36 48 AM" src="https://user-images.githubusercontent.com/87101785/224974651-40711a39-a90c-4a97-91e1-b449963f3732.png">
 
@@ -303,13 +305,13 @@ The Network Interface layer accepts IP datagrams and transmits them as frames ov
 
 
 
-What is OSI?
------------
+🌱 4.What is OSI?
+-----------------
 
 The OSI reference model defines how applications can communicate over a network.
 
-TCP and UDP sockets:
---------------------
+🌱 5. TCP and UDP sockets:
+-------------------------
 
 In this example we have two clients connected to the same web server and just so happens they are both using the same port numbers 
 49888
@@ -324,8 +326,8 @@ okey
 
 the way that it does this is the connection is divided defined by a pair of numbers known as sockets
 
-the source IP address and source port from the client to the server and the destination IP address and destination port number server, but this is all from the perspective of whoever we are looking at,so from the source IP address and source port number this is where the segment coming from,
-it is coming from this IP address and this spesific port on the client.
+the source IP address and source port from the client to the server and the destination IP address and destination port number server, but this is all from the perspective of whoever we are looking at, so from the source IP address and source port number this is where the segment coming from,
+it is coming from this IP address and this specific port on the client.
 
 --->So combining the transport layer port number and the network layer address uniquely identifies a particular application process running on an individual host device.
 
@@ -369,7 +371,7 @@ netstat -n command shows us this socket pair so it shows us any of the TCP and U
 <img width="650" alt="Screen Shot 2023-03-16 at 10 50 26 AM" src="https://user-images.githubusercontent.com/87101785/225579973-504be38b-deaa-4440-827e-4252c8e4e8a6.png">
 
 
-Types of sockets
+5.1 Types of sockets
 -----------------
 
 
@@ -383,7 +385,7 @@ Stream Socket : In Computer operating system, a stream socket is type of interpr
 
 
 
-What happens when tou type a URL into your browser?
+🌱6. What happens when tou type a URL into your browser?
 ---------------------------------------------------
 
 Here Bob enters a URL into the browser and click Enter.
@@ -394,7 +396,7 @@ Here Bob enters a URL into the browser and click Enter.
 
 What happens next?
 
-Let's first discuss what a URL is ?  URL stands for universal resource locator, and it has four parts:
+Let's first discuss what a URL is ?  URL stands for (universal resource locator), and it has four parts:
 
 <img width="610" alt="Screen Shot 2023-03-16 at 11 13 25 AM" src="https://user-images.githubusercontent.com/87101785/225585757-285de5a4-a166-4b97-b745-c1f0254a167a.png">
 
@@ -403,9 +405,9 @@ They together specify the resource on the server we want to load.
 
 
 
-so okey Let's continue -->
+so okey Let's continue ----->
 
-Bob entered the url into the browser, what happend next, Well the browser needs to know  how to reach the server, in this case "example.com".
+Bob entered the URL into the browser, what happend next, Well the browser needs to know  how to reach the server, in this case "example.com".
 
 This done with a process called DNS lookup (DNS stands for Domain Name system) think of it as a phone book of the internet. DNS translates domain names to IP addresses so browsers can load resources. It is an interesting service in and off.
 
@@ -415,7 +417,7 @@ Finally the browser has the IP address of the server, in our case again example.
 
 
 
-Now there is a handshake involved in establishing a TCP connection. It takes several network round trips for this to complete. To keep the loading process fast, modern browsers use something called a keep alive connection to try to reuse an established TCP connaction to the server as much as possible.
+Now there is a handshake involved in establishing a TCP connection. It takes several network round trips for this to complete. To keep the loading process fast, modern browsers use something called a keep alive connection to try to reuse an established TCP connection to the server as much as possible.
 
 one thing to note is that if the protocol is https the process of establishing a new connection is even more involved. It requires a complicated process called SSL/TLS handshake to establish the encrypted connection between the browser and the server.
 
@@ -434,8 +436,8 @@ The browser receives the response and renders html content
 <img width="679" alt="Screen Shot 2023-03-16 at 11 32 07 AM" src="https://user-images.githubusercontent.com/87101785/225590339-2d4a4c01-4748-4a40-a788-fa2891b1b7ea.png">
 
 
- 🌱 What is HTTP?
-------------
+ 🌱 7. What is HTTP?
+----------------------
 
 The Hypertext Transfer Protocol (HTTP) is the foundation of the World Wide Web, and is used to load webpages using hypertext links. HTTP is an application layer protocol designed to transfer information between networked devices and runs on top of other layers of the network protocol stack. A typical flow over HTTP involves a client machine making a request to a server, which then sends a response message.
 
@@ -447,8 +449,8 @@ le navigateur web est une application client qui accède aux ressources stockees
 Lorsque une URL est saisie au niveau des navigateur web client, le client http envoyer un requête http au serveur, le protocole http au niveau de serveur http s'éxecute en arriere plan, donc il s'agie d'un service, donc ce service il va traiter la requête http et il envois ce que n'appele une reponse http.
 
 
- 🌱 La structure d'une requite HTTP:
------------------------------------
+ 🌱8. La structure d'une requite HTTP:
+--------------------------------------
 
 
 
@@ -510,7 +512,7 @@ Pour aider le navigateur a determiner le type de fichier qu'il recois, le serveu
 
 
 
- 🌱  example:
+ 🌱 8.1 example:
 ------------
 
 
@@ -636,11 +638,11 @@ Referrer: referrer has info regarding the referring site, if you are to click on
 
 
 
-2: Protocole:
-************************
+🌱 9: Protocoles:
+-----------------
 
 
-2.1: What is protocole:
+9.1: What is protocole:
 ----------------------
 
 a protocol can be defined as a set of rules convensions and data structures that dictate how devices extchange data across a networks. In other words network protocols can be equated to languages that two devices most understand for seamless communication of information, regardless of their infrastructure and design desparities.
@@ -652,7 +654,7 @@ Similar to the way that speaking the same language simplifies communication betw
 
 Protocols are sets of rules for message formats and procedures that allow machines and application programs to exchange information. These rules must be followed by each machine involved in the communication in order for the receiving host to be able to understand the message.
 
-2.2: List of Network Protocols:
+9.2: List of Network Protocols:
 -------------------------------
 
 There are thousands of different network protocols, but they all perform one of three primary actions:
@@ -720,7 +722,7 @@ TCP est un protocole fiable de bout en bout orienté connexion pour garantir la 
 
 UDP est un protocole de transmission simple qui fournit un service non fiable. Cela ne signifie pas que UDP ne fournira pas les données mais il n’y a pas de mécanismes pour surveiller le contrôle de congestion ou la perte de paquets, etc. Comme c’est simple, cela évite le traitement du congestion. Les applications en temps réel utilisent principalement UDP car la suppression des paquets est préférable. Un exemple typique est celui des flux de média (Streaming)
 
-🌱 Ressources:
+🌱10. Ressources:
 ------------
 
 https://www.youtube.com/watch?v=auhEJDGHI8Q
