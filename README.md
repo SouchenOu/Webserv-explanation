@@ -329,6 +329,47 @@ The three-way  handshake:
 🌱 5. TCP and UDP sockets:
 -------------------------
 
+What is a socket:
+-----------------
+
+
+socket is an endpoint of 2-way communication between programs running on the network
+
+
+for example:
+
+client program want to communicate with a server program, so it means client program want to send a message to the server program, so how client program will send the message to the server program ? 
+
+as per the definition socket is required when two different programs running on the network, so this is client side socket and this is server side socket
+
+
+<img width="777" alt="Screen Shot 2023-03-17 at 2 44 58 PM" src="https://user-images.githubusercontent.com/87101785/225922508-0a538310-061b-4f4d-b0d2-73c712f1009c.png">
+
+
+the socket address is associated  with the ip address as well as the port address. so this is the client IP address and this is the server IP address
+
+
+
+<img width="777" alt="Screen Shot 2023-03-17 at 2 46 30 PM" src="https://user-images.githubusercontent.com/87101785/225922921-73b106fb-6455-4ef6-9560-255db253e76d.png">
+
+so here client and server can send the data through the IP address 
+
+Here there is client side ports and server side ports 
+
+
+<img width="777" alt="Screen Shot 2023-03-17 at 2 57 17 PM" src="https://user-images.githubusercontent.com/87101785/225925803-47a4075c-22f9-48fa-bec9-d4eab21d6ad8.png">
+
+
+so the socket address is associated with the ip address and the port address, in this senario client want to send a message to the server so first of all client will shoose any free port which is available at the server (the same thing for the server).
+
+
+so client program send that message to the socket and socket will forward that message to the selected port of the client machine, so client side selected port forward that message to the agreed port to the server, now that agreed port forward that message to the socket, and socket will pass that message to the respected program running on the server side. 
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
 In this example we have two clients connected to the same web server and just so happens they are both using the same port numbers 
 49888
 
