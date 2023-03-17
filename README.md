@@ -845,11 +845,62 @@ There are a few steps involved in using sockets
 5: Close the socket
 
 
+14.Function used in this projects:
+-------------------------------
+
+14.1 socket() :
+-------------
+
+socket():  int socket(int domain, int type, int protocol);
 
 
+The socket function is used to create a new socket descriptor 
+
+The socket() function shall create an unbound socket in a communications domain, and return a file descriptor that can be used in later function calls that operate on sockets.
 
 
+The socket() function takes the following arguments:
 
+domain: Specifies the communications domain in which a socket is to be created.
+
+type:Specifies the type of socket to be created.
+
+protocol:Specifies a particular protocol to be used with the socket. Specifying a protocol of 0 causes socket() to use an unspecified default protocol appropriate for the requested socket type.
+
+
+14.2: bind() :
+------------
+
+int bind(int socket, struct sockaddr *address, int address_len);
+
+(identify (give a name to a socket ) a socket)
+
+The bind() function binds a unique local name to the socket with descriptor socket. After calling socket(), a descriptor does not have a name associated with it. However, it does belong to a particular address family as specified when socket() is called. The exact format of a name depends on the address family.
+
+Parameter:
+
+    Description :
+    
+socket: The socket descriptor returned by a previous socket() call.
+
+address:The pointer to a sockaddr structure containing the name that is to be bound to socket.
+
+address_len:The size of address in bytes.
+
+14.3: htons():
+---------------
+
+
+The htons function takes a 16-bit number in host byte order and returns a 16-bit number in network byte order used in TCP/IP networks (the AF_INET or AF_INET6 address family).
+
+The htons function can be used to convert an IP port number in host byte order to the IP port number in network byte order.
+
+14.4: htonl():
+-------------
+
+The htonl function takes a 32-bit number in host byte order and returns a 32-bit number in the network byte order used in TCP/IP networks (the AF_INET or AF_INET6 address family).
+
+The htonl function can be used to convert an IPv4 address in host byte order to the IPv4 address in network byte order. This function does not do any checking to determine if the hostlong parameter is a valid IPv4 address.
 
 
 🌱14. Ressources:
