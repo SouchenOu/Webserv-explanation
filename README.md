@@ -38,7 +38,7 @@ Once we add a router to the system, our network of 10 computers only requires 10
 
 
 🌱 2 : Web server
--------------
+-----------------
 
 2.1-What is web server?
 -----------------------
@@ -364,6 +364,28 @@ so the socket address is associated with the ip address and the port address, in
 
 
 so client program send that message to the socket and socket will forward that message to the selected port of the client machine, so client side selected port forward that message to the agreed port to the server, now that agreed port forward that message to the socket, and socket will pass that message to the respected program running on the server side. 
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+Socket used for communication between client and server systems.
+
+so lets see what is this sockets ?
+
+how do they work ?
+
+how do they help in communication between two or more processes?
+
+
+1: socket identified by an IP address followed by a port number.
+
+2: The server waits for incoming client requests by listening to a specified port. Once a request is received,the server accepts a connection from the client socket to complete the connection.
+
+
+ps: what is the client and server?
+
+In a client server systems, the client asks for information from the server and the server will give that information to the clients, that how is works. so in order for the client to communicate to the server and the server to communicate back to the client, there needs to be a connection
+between the client and the server, so in order to establish this connection we are going to use a sockets.
+
 
 
 
