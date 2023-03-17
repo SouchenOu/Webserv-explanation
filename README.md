@@ -903,6 +903,16 @@ The htonl function takes a 32-bit number in host byte order and returns a 32-bit
 The htonl function can be used to convert an IPv4 address in host byte order to the IPv4 address in network byte order. This function does not do any checking to determine if the hostlong parameter is a valid IPv4 address.
 
 
+14.5: connect():
+--------------
+
+int connect(int socket, const struct sockaddr *address, socklen_t address_len);
+
+
+
+For stream sockets, the connect() call attempts to establish a connection between two sockets. For datagram sockets, the connect() call specifies the peer for a socket. The socket parameter is the socket used to originate the connection request. The connect() call performs two tasks when called for a stream socket. First, it completes the binding necessary for a stream socket (in case it has not been previously bound using the bind() call). Second, it attempts to make a connection to another socket.
+
+
 🌱14. Ressources:
 -----------------
 
