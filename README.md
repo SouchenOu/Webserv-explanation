@@ -987,6 +987,15 @@ For stream sockets, the connect() call attempts to establish a connection betwee
 --------------
 
 
+14.8: listen():
+--------------
+
+
+int listen(int socket, int backlog);
+
+The listen() call indicates a readiness to accept client connection requests. It transforms an active socket into a passive socket. Once called, socket can never be used as an active socket to initiate connection requests. Calling listen() is the third of four steps that a server performs to accept a connection. It is called after allocating a stream socket with socket(), and after binding a name to socket with bind(). It must be called before calling accept().
+
+
 🌱14. Ressources:
 -----------------
 
