@@ -977,14 +977,10 @@ For stream sockets, the connect() call attempts to establish a connection betwee
 
 
 
-14.6: poll():
--------
+14.6: poll() && select():
+-------------------------
 
-
-
-
-14.7: select():
---------------
+The select() and poll() methods can be a powerful tool when you’re multiplexing network sockets. Specifically, these methods will indicate when a procedure will be safe to execute on an open file descriptor without any delays. For instance, a programmer can use these calls to know when there is data to be read on a socket. By delegating responsibility to select() and poll(), you don’t have to constantly check whether there is data to be read. Instead, select() and poll() can be placed in the background by the operating system and woken up when the event is satisfied or a specified timeout has elapsed.
 
 
 14.8: listen():
@@ -994,6 +990,18 @@ For stream sockets, the connect() call attempts to establish a connection betwee
 int listen(int socket, int backlog);
 
 The listen() call indicates a readiness to accept client connection requests. It transforms an active socket into a passive socket. Once called, socket can never be used as an active socket to initiate connection requests. Calling listen() is the third of four steps that a server performs to accept a connection. It is called after allocating a stream socket with socket(), and after binding a name to socket with bind(). It must be called before calling accept().
+
+
+14.9: accept():
+--------------
+
+
+
+int accept(int socket, struct sockaddr *address, int *address_len);
+
+
+The accept() call is used by a server to accept a connection request from a client. When a connection is available, the socket created is ready for use to read data from the process that requested the connection. The call accepts the first connection on its queue of pending connections for the given socket socket. The accept() call creates a new socket descriptor with the same properties as socket and returns it to the caller.
+
 
 
 🌱14. Ressources:
