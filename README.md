@@ -77,6 +77,87 @@ Excluding downtime and system troubles, a dedicated web server is always connect
 A dedicated web server can have the same IP address all the time. This is known as a dedicated IP address. (Not all ISPs provide a fixed IP address for home lines.)
 A dedicated web server is typically maintained by a third party.
 
+
+
+
+---------------------------------------------------------------------------------------------------------------
+
+What is a web server ?
+
+
+and what kind of applications are used to serve web applications?
+
+
+From a hardware standpoint anything with a network connection could be  a web server; your laptop, a smartphone...... .
+
+
+
+------->A web server is really just piece of software that serves web content.
+
+So the six things that a webserver does in roughly the order in which they happen, so to serve a web content a web server 
+
+listens on a port for a request sent via a transport protocol and returns a response containing the requested resource 
+
+
+
+1: listen
+
+2: on a port
+
+3: For a request
+
+4: Transport protocol
+
+5: response
+
+6: resource
+
+
+so lets go ahead nd take each one of these items one by one 
+
+
+
+Firstly let's focus for a minute on what it means for a web server to listen, basically once a web server application starts up, it just sits there 
+
+waiting for uncoming request , if no request comming then the web server doesnt actually do anything 
+
+now i happen to have a web server running right now on my local machine, of course it is running on the local host ip address (http://127.0.0.1).
+
+so what exactly is the webserver listening to --> The answer is a network port provided by the operating system that the web server is running on, more specifically the network protocol that we are using provides 65.535 ports that software running on the computer can communicate over.
+
+now when a web server starts up it begins listening or if so configured many of thos ports going back 
+
+when we taped the ip address 127.0.0.1 we didnt provide a ports and that is because a web browser automatically sends a web request to either port 80 or port 443, depending on whether we prefix the url with http or https. 
+
+
+
+This is an HTTP request example:
+
+<img width="777" alt="Screen Shot 2023-03-21 at 1 22 12 PM" src="https://user-images.githubusercontent.com/87101785/226618914-f0a90d7f-f2a4-4d53-b3c1-c6894ef6b8dc.png">
+
+
+<img width="777" alt="Screen Shot 2023-03-21 at 1 35 34 PM" src="https://user-images.githubusercontent.com/87101785/226622480-60803eb4-e1d2-4dac-a982-63182723eb96.png">
+
+
+The first line is the start line which contains, the request method (GET) then the request target which is the spesific web page (/orders/123) 
+or resource we are requesting, and finally the http version 1.1
+
+The second line is the ip and port we are attempting to send the request to 
+
+The third line is the user-Agent which is the header that tells the web server, what type of browser we are using  
+
+
+Finally the fourth block is made up of an optional body which begins, after that first line break
+
+
+
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
 2.2-Examples of web server software
 ---------------------------------------
 
