@@ -1138,8 +1138,14 @@ int listen(int socket, int backlog);
 
 The listen() call indicates a readiness to accept client connection requests. It transforms an active socket into a passive socket. Once called, socket can never be used as an active socket to initiate connection requests. Calling listen() is the third of four steps that a server performs to accept a connection. It is called after allocating a stream socket with socket(), and after binding a name to socket with bind(). It must be called before calling accept().
 
+14.*9: fd_set:
+-------------
 
-14.9: accept():
+The fd_set structure is used by various Windows Sockets functions and service providers, such as the select function, to place sockets into a "set" for various purposes, such as testing a given socket for readability using the readfds parameter of the select function.
+
+
+
+14.10: accept():
 --------------
 
 
@@ -1149,7 +1155,26 @@ int accept(int socket, struct sockaddr *address, int *address_len);
 
 The accept() call is used by a server to accept a connection request from a client. When a connection is available, the socket created is ready for use to read data from the process that requested the connection. The call accepts the first connection on its queue of pending connections for the given socket socket. The accept() call creates a new socket descriptor with the same properties as socket and returns it to the caller.
 
+14.11: select():
+----------------
 
+
+The select() call monitors activity on a set of sockets looking for sockets ready for reading, writing, or with an exception condition pending.
+
+
+--> The select() function indicates which of the specified file descriptors is ready for reading, ready for writing, or has an error condition pending
+
+int select(int nfds, fd_set *readfds, fd_set *writefds, fd_set *exceptfds)
+
+nfds: The number of socket descriptors to be checked. This value should be one greater than the greatest number of sockets to be checked.
+
+readfds :Points to a bit set of descriptors to check for reading.
+
+writefds : Points to a bit set of descriptors to check for writing.
+
+exceptfds: Points to a bit set of descriptors to check for exception conditions pending.
+
+timeout : Points to the time to wait for select() to complete.
 
 🌱14. Ressources:
 -----------------
