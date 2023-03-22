@@ -1176,6 +1176,16 @@ exceptfds: Points to a bit set of descriptors to check for exception conditions 
 
 timeout : Points to the time to wait for select() to complete.
 
+
+14.12: send():
+-------------
+
+The send() function sends data on the socket with descriptor socket
+
+int send(int socket, char *buffer, int length, int flags);
+
+
+
 🌱14. Ressources:
 -----------------
 
