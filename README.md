@@ -215,7 +215,8 @@ and refresh , and as soon as i refresh you can see here a bunch of a different n
 
 The first one is our network requests that were made from the browser to a particular server in order to get content, now im going to go ahead and click on the very first network request just to get a little bit more information about it 
 
-<img width="777" alt="Screen Shot 2023-03-22 at 10 06 07 AM" src="https://user-images.githubusercontent.com/87101785/226870641-2a852742-0688-4856-9a95-f0da4f813519.png">
+<img width="793" alt="Screen Shot 2023-03-22 at 10 08 31 AM" src="https://user-images.githubusercontent.com/87101785/226873400-feb0f07e-d444-4831-a1a1-2fa9768a27f9.png">
+
 
 we see here a bunch of information and we see also the server section that is actually nginx, so nginx was the one that served us content(served us this web content to our browser )
 
@@ -223,6 +224,14 @@ so nginx is a server that is going to serve web content to our browser
 
 
 Lets see an example:
+
+
+<img width="826" alt="Screen Shot 2023-03-22 at 10 18 37 AM" src="https://user-images.githubusercontent.com/87101785/226873432-95e354ba-26f9-42ad-a3d1-ae1c11366213.png">
+
+
+lets see i am on my computer and i go to airbn.com now typically what we would think would happen is we make a request over the internet to a server that airbnb is hosting. i'm pretty sure airbnb uses aws, so lets say there is a server on aws that it is nginx.
+
+ans once we make a request it is going to process a request and send back a response 
 
 
 
