@@ -182,6 +182,53 @@ Savant: official Savant website.
 Tomcat: official Tomcat website.
 
 
+Nginx:
+-------
+
+
+What exactly is NGINX ?   and   What it is purpose is ? 
+
+
+The best way to say this ---> is to show an example where nginx is being used
+
+so lets going to go to my browser and going to this pages airbnb.ca so you can see that my browser is served a bunch of different content 
+
+<img width="777" alt="Screen Shot 2023-03-22 at 10 01 03 AM" src="https://user-images.githubusercontent.com/87101785/226868585-10306052-b009-4100-af26-1dcd902d2836.png">
+
+
+
+we have images ......
+
+
+The question is how did my browser get all of this content ?
+
+in order to understand this we actually dissect this by inspecting it , and looking at the network tabs 
+
+
+<img width="777" alt="Screen Shot 2023-03-22 at 10 04 32 AM" src="https://user-images.githubusercontent.com/87101785/226869304-8d1b7921-6338-490c-999a-532d74803d8a.png">
+
+and refresh , and as soon as i refresh you can see here a bunch of a different networks
+
+
+<img width="777" alt="Screen Shot 2023-03-22 at 10 06 07 AM" src="https://user-images.githubusercontent.com/87101785/226869736-ad0d670b-16e4-4d80-972f-a1d6d0c4a9dd.png">
+
+
+The first one is our network requests that were made from the browser to a particular server in order to get content, now im going to go ahead and click on the very first network request just to get a little bit more information about it 
+
+<img width="777" alt="Screen Shot 2023-03-22 at 10 06 07 AM" src="https://user-images.githubusercontent.com/87101785/226870641-2a852742-0688-4856-9a95-f0da4f813519.png">
+
+we see here a bunch of information and we see also the server section that is actually nginx, so nginx was the one that served us content(served us this web content to our browser )
+
+so nginx is a server that is going to serve web content to our browser 
+
+
+Lets see an example:
+
+
+
+
+
+
 
 🌱 3 .What is TCP/IP ?
 -----------------------
