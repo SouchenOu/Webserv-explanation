@@ -1208,3 +1208,19 @@ https://www.youtube.com/watch?v=_0thnFumSdA&t=41s
 web serve from scratch
 
 https://www.youtube.com/watch?v=YwHErWJIh6Y&t=5s
+
+
+
+
+
+useful command:
+---------------
+
+
+
+
+/Users/souchen/.brew/etc/nginx/nginx.conf
+
+/Users/souchen/.brew/etc/nginx/nginx.conf
+
+nginx -t
