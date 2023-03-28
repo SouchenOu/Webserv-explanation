@@ -1212,6 +1212,10 @@ https://www.digitalocean.com/community/tutorials/understanding-the-nginx-configu
  
 https://www.youtube.com/watch?v=7VAI73roXaY&t=1022s
 
+NGINX GUID :
+
+https://www.plesk.com/blog/various/nginx-configuration-guide/
+
 useful command:
 ---------------
 
