@@ -1207,8 +1207,10 @@ https://www.youtube.com/watch?v=_0thnFumSdA&t=41s
 https://www.digitalocean.com/community/tutorials/understanding-the-nginx-configuration-file-structure-and-configuration-contexts
 
 
-
-
+ 
+ NGINX FULLCOURSE
+ 
+https://www.youtube.com/watch?v=7VAI73roXaY&t=1022s
 
 useful command:
 ---------------
