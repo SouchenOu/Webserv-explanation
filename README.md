@@ -1204,10 +1204,7 @@ https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/Wh
 
 https://www.youtube.com/watch?v=_0thnFumSdA&t=41s
 
-
-web serve from scratch
-
-https://www.youtube.com/watch?v=YwHErWJIh6Y&t=5s
+https://www.digitalocean.com/community/tutorials/understanding-the-nginx-configuration-file-structure-and-configuration-contexts
 
 
 
