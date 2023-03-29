@@ -1216,6 +1216,12 @@ NGINX GUID :
 
 https://www.plesk.com/blog/various/nginx-configuration-guide/
 
+Serve static website:
+
+
+https://docs.nginx.com/nginx/admin-guide/web-server/serving-static-content/
+
+
 useful command:
 ---------------
 
