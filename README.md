@@ -1186,7 +1186,50 @@ int send(int socket, char *buffer, int length, int flags);
 
 
 
-🌱14. Ressources:
+15: confif_file NGINX:
+---------------------
+
+
+
+15.1: location:
+---------------
+
+
+example :
+
+
+           server 
+           {
+              root /www/data;
+
+              location / {
+              }
+
+              location /images/ {
+              }
+
+              location ~ \.(mp3|mp4) {
+                root /www/media;
+              }
+           }
+           
+           
+           
+Here, NGINX searches for a URI that starts with /images/ in the /www/data/images/ directory in the file system. But if the URI ends with the .mp3 or .mp4 extension, NGINX instead searches for the file in the /www/media/ directory because it is defined in the matching location block.
+
+If a request ends with a slash, NGINX treats it as a request for a directory and tries to find an index file in the directory. The index directive defines the index file’s name (the default value is index.html). To continue with the example, if the request URI is /images/some/path/, NGINX delivers the file /www/data/images/some/path/index.html if it exists. If it does not, NGINX returns HTTP code 404 (Not Found) by default. To configure NGINX to return an automatically generated directory listing instead, include the on parameter to the autoindex directive:
+
+
+
+
+
+
+
+
+
+
+
+🌱16. Ressources:
 -----------------
 
 https://www.youtube.com/watch?v=auhEJDGHI8Q
