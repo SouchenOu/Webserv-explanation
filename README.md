@@ -1351,12 +1351,37 @@ here when i tape the URL localhost:8080/number/2  NGINX delivere  the same file 
 
 
 
+16: How we can reload NGINX as load balancer:
+---------------------------------------------
+
+Firsty what is a load balancer :
+
+When our application starts getting a lot of users 
+
+
+<img width="660" alt="Screen Shot 2023-03-30 at 2 28 16 PM" src="https://user-images.githubusercontent.com/87101785/228868919-c1137a96-d871-41ac-ba7c-659df0aad50f.png">
 
 
 
 
 
-16: NGINX command line :
+what we need to do is scale our application and the best way to scale our application is just to build multiple service within any infrastructure
+
+In this case how is the client make the request to the server, and which the server will make the request to?
+
+
+so this can get really complicated and that is why we have NGINX in the middle so instead of the client to worrying exactly where to make the request to, it is just going to make a request  straight to the internet and that is going be caught by NGINX and then the nginx responsabilty to farward that request to any particular server that it chooses and this is typically done by a specific algorithm, and the most commun algorithm is a round robin algorithm where well the first request comes in it just forwards it to this server and then sends it right back, the next request comes in well alrighdy sent it to this one that is 
+
+<img width="660" alt="Screen Shot 2023-03-30 at 2 40 25 PM" src="https://user-images.githubusercontent.com/87101785/228872514-e2c82e8c-8549-4403-8917-783e350d88f7.png">
+
+
+
+
+
+
+
+
+17: NGINX command line :
 -------------------------
 
 
