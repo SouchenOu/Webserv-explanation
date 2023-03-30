@@ -1273,10 +1273,18 @@ so we can replace type with include -->
 <img width="616" alt="Screen Shot 2023-03-30 at 12 03 47 PM" src="https://user-images.githubusercontent.com/87101785/228830375-6d4bee2d-f1e9-4eda-ad2b-8aef3edbdc2d.png">
 
 
+16: NGINX command line :
+-------------------------
 
 
+1. Nginx -t 
 
-🌱16. Ressources:
+2. nginx services restart nginx
+
+3. nginx -s reload
+
+
+🌱17. Ressources:
 -----------------
 
 https://www.youtube.com/watch?v=auhEJDGHI8Q
