@@ -1254,6 +1254,17 @@ To return the index file, NGINX checks for its existence and then makes an inter
     }
 
 
+15.5: include
+------------
+
+<img width="826" alt="Screen Shot 2023-03-30 at 11 57 47 AM" src="https://user-images.githubusercontent.com/87101785/228829266-3dc6b81d-39ad-427a-9e74-f0f013cda412.png">
+
+here we can replace type with  include because we can have more than two types of files, and we find this all types in mime.types file
+
+
+
+
+
 🌱16. Ressources:
 -----------------
 
