@@ -1217,7 +1217,26 @@ example :
            
 Here, NGINX searches for a URI that starts with /images/ in the /www/data/images/ directory in the file system. But if the URI ends with the .mp3 or .mp4 extension, NGINX instead searches for the file in the /www/media/ directory because it is defined in the matching location block.
 
-If a request ends with a slash, NGINX treats it as a request for a directory and tries to find an index file in the directory. The index directive defines the index file’s name (the default value is index.html). To continue with the example, if the request URI is /images/some/path/, NGINX delivers the file /www/data/images/some/path/index.html if it exists. If it does not, NGINX returns HTTP code 404 (Not Found) by default. To configure NGINX to return an automatically generated directory listing instead, include the on parameter to the autoindex directive:
+If a request ends with a slash, NGINX treats it as a request for a directory and tries to find an index file in the directory. The index directive defines the index file’s name (the default value is index.html). To continue with the example, if the request URI is /images/some/path/, NGINX delivers the file /www/data/images/some/path/index.html if it exists. If it does not, NGINX returns HTTP code 404 (Not Found) by default.
+
+
+
+example:
+ in this example, if the URL is localhost::8080/fruits so NGINX  delivers the file /Users/souchen/.brew/etc/nginx/mysite/fruits
+ 
+ 
+<img width="616" alt="Screen Shot 2023-03-30 at 12 26 16 PM" src="https://user-images.githubusercontent.com/87101785/228836768-889d84f9-4c91-454f-90ad-1ccff680655b.png">
+
+
+15.2 : alias
+-------------
+
+to understand alias lets talk about this example:
+
+here we will not add /carbs to the link, so if the URL is localhost:8080/carbs , NGINX delivers the file /Users/souchen/.brew/etc/nginx/mysite/fruits
+
+
+<img width="515" alt="Screen Shot 2023-03-30 at 12 33 20 PM" src="https://user-images.githubusercontent.com/87101785/228837401-ac9fd891-6a39-4c2c-bf8f-8a55f9279e73.png">
 
 
 
