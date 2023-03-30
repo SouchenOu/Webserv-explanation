@@ -1323,6 +1323,23 @@ so we can replace type with include -->
 15.7.1 Redirects:
 ---------------
 
+As you see we dont have directory meals in our project
+
+
+<img width="701" alt="Screen Shot 2023-03-30 at 2 07 14 PM" src="https://user-images.githubusercontent.com/87101785/228862772-34a7a9c9-cf1a-47b4-aa17-586aa67b2145.png">
+
+so if the request URL is localhost::8080/meals  NGINX delivered the file /Users/souchen/.brew/etc/nginx/mysite/fruits
+
+
+
+thet why we will going to return a 307 /fruits (to redirect /fruits file)
+
+<img width="701" alt="Screen Shot 2023-03-30 at 2 05 51 PM" src="https://user-images.githubusercontent.com/87101785/228862510-96e8fcb6-972c-4ccf-99d9-3601e964968d.png">
+
+
+
+
+
 
 
 
