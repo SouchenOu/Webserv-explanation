@@ -1222,11 +1222,36 @@ If a request ends with a slash, NGINX treats it as a request for a directory and
 
 
 
+15.2: root
+-----------
+
+The root directive specifies the root directory that will be used to search for a file. NGINX appends the request URI to the path specified by the root directive. 
+
+      server {
+          root /www/data;
+      }
+      
+15.3 autoindex
+--------------
+
+To configure NGINX to return an automatically generated directory listing instead, include the on parameter to the autoindex directive:
+
+        location /images/ {
+            autoindex on;
+         }
 
 
+15.4: index
+-----------
 
 
+To return the index file, NGINX checks for its existence and then makes an internal redirect to the URI obtained by appending the name of the index file to the base URI. The internal redirect results in a new search of a location and can end up in another location as in the following example:
 
+
+     location / {
+    root /data;
+    index index.html index.php;
+    }
 
 
 🌱16. Ressources:
