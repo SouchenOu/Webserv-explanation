@@ -1351,7 +1351,7 @@ thet why we will going to return a 307 /fruits (to redirect /fruits file)
 
 2. nginx services restart nginx
 
-3. nginx -s reload
+3. nginx -s reload. ---> (To reload our NGINX configuration)
 
 
 🌱17. Ressources:
