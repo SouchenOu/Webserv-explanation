@@ -1265,7 +1265,7 @@ try_files means --> try this files if it exist go for it  but if not exist we sh
 
 
 
-15.2: root
+15.3: root
 -----------
 
 The root directive specifies the root directory that will be used to search for a file. NGINX appends the request URI to the path specified by the root directive. 
@@ -1274,7 +1274,7 @@ The root directive specifies the root directory that will be used to search for 
           root /www/data;
       }
       
-15.3 autoindex
+15.4: autoindex
 --------------
 
 To configure NGINX to return an automatically generated directory listing instead, include the on parameter to the autoindex directive:
@@ -1284,7 +1284,7 @@ To configure NGINX to return an automatically generated directory listing instea
          }
 
 
-15.4: index
+15.5: index
 -----------
 
 
@@ -1297,7 +1297,7 @@ To return the index file, NGINX checks for its existence and then makes an inter
     }
 
 
-15.5: include
+15.6: include
 ------------
 
 <img width="826" alt="Screen Shot 2023-03-30 at 11 57 47 AM" src="https://user-images.githubusercontent.com/87101785/228829266-3dc6b81d-39ad-427a-9e74-f0f013cda412.png">
@@ -1314,6 +1314,16 @@ so we can replace type with include -->
 
 
 <img width="616" alt="Screen Shot 2023-03-30 at 12 03 47 PM" src="https://user-images.githubusercontent.com/87101785/228830375-6d4bee2d-f1e9-4eda-ad2b-8aef3edbdc2d.png">
+
+
+
+15.7: Redirects and Rewrites:
+----------------------------
+
+15.7.1 Redirects:
+---------------
+
+
 
 
 16: NGINX command line :
