@@ -1222,7 +1222,9 @@ If a request ends with a slash, NGINX treats it as a request for a directory and
 
 
 example:
- in this example, if the URL is localhost::8080/fruits so NGINX  delivers the file /Users/souchen/.brew/etc/nginx/mysite/fruits
+ in this example, if the URL is localhost::8080/fruits so NGINX  delivers the file /Users/souchen/.brew/etc/nginx/mysite/fruits,
+ 
+ exactly in index.html (by default)
  
  
 <img width="616" alt="Screen Shot 2023-03-30 at 12 26 16 PM" src="https://user-images.githubusercontent.com/87101785/228836768-889d84f9-4c91-454f-90ad-1ccff680655b.png">
@@ -1231,12 +1233,34 @@ example:
 15.2 : alias
 -------------
 
-to understand alias lets talk about this example:
+To understand alias lets talk about this example:
 
-here we will not add /carbs to the link, so if the URL is localhost:8080/carbs , NGINX delivers the file /Users/souchen/.brew/etc/nginx/mysite/fruits
+Here we will not add /carbs to the link, so if the URL is localhost:8080/carbs , NGINX delivers the file /Users/souchen/.brew/etc/nginx/mysite/fruits,
+
+exacty index.html (by default)
 
 
 <img width="515" alt="Screen Shot 2023-03-30 at 12 33 20 PM" src="https://user-images.githubusercontent.com/87101785/228837401-ac9fd891-6a39-4c2c-bf8f-8a55f9279e73.png">
+
+
+but if there is no index.html at that directory !?
+
+<img width="701" alt="Screen Shot 2023-03-30 at 1 08 20 PM" src="https://user-images.githubusercontent.com/87101785/228848980-a6f062a9-0c14-433e-9f89-a66e18e5815e.png">
+
+
+for example here we have in directory vegetables the file vegetables.html not index.html so if the URL is localhost:8080/vegetables, NGINX delivers the file 404 error
+
+so we will fix this problem by using try_files
+
+
+<img width="701" alt="Screen Shot 2023-03-30 at 1 24 02 PM" src="https://user-images.githubusercontent.com/87101785/228850426-79e3c72b-3f75-4b86-bf37-d79210e22f91.png">
+
+
+
+try_files means --> try this files if it exist go for it  but if not exist we should throw 404 error
+
+
+<img width="701" alt="Screen Shot 2023-03-30 at 1 27 28 PM" src="https://user-images.githubusercontent.com/87101785/228851345-332b4737-f157-485a-a7ac-bd9910e12771.png">
 
 
 
