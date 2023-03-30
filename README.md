@@ -1262,6 +1262,17 @@ To return the index file, NGINX checks for its existence and then makes an inter
 here we can replace type with  include because we can have more than two types of files, and we find this all types in mime.types file
 
 
+This is mime.types file -->
+
+<img width="616" alt="Screen Shot 2023-03-30 at 12 04 01 PM" src="https://user-images.githubusercontent.com/87101785/228830154-3cddd574-1ff0-4af5-b9d8-f50f6ae1ed0b.png">
+
+
+so we can replace type with include -->
+
+
+<img width="616" alt="Screen Shot 2023-03-30 at 12 03 47 PM" src="https://user-images.githubusercontent.com/87101785/228830375-6d4bee2d-f1e9-4eda-ad2b-8aef3edbdc2d.png">
+
+
 
 
 
