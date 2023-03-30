@@ -1323,6 +1323,9 @@ so we can replace type with include -->
 15.7.1 Redirects:
 ---------------
 
+15.7.1.1 return
+---------------
+
 As you see we dont have directory meals in our project
 
 
@@ -1335,6 +1338,16 @@ so if the request URL is localhost::8080/meals  NGINX delivered the file /Users/
 thet why we will going to return a 307 /fruits (to redirect /fruits file)
 
 <img width="701" alt="Screen Shot 2023-03-30 at 2 05 51 PM" src="https://user-images.githubusercontent.com/87101785/228862510-96e8fcb6-972c-4ccf-99d9-3601e964968d.png">
+
+15.7.1.2 rewrite:
+----------------
+
+
+
+here when i tape the URL localhost:8080/number/2  NGINX delivere  the same file that will delivere when the URL is localhost:8080/count/2
+
+
+<img width="519" alt="Screen Shot 2023-03-30 at 2 20 39 PM" src="https://user-images.githubusercontent.com/87101785/228867540-81683a59-6f9b-4e68-a885-0b48d02b9ccd.png">
 
 
 
