@@ -1428,6 +1428,10 @@ Serve static website:
 https://docs.nginx.com/nginx/admin-guide/web-server/serving-static-content/
 
 
+HTTP redirects:
+
+https://www.ohmycrawl.com/technical-seo/301-vs-308/
+
 useful command:
 ---------------
 
