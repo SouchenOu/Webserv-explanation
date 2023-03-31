@@ -1434,6 +1434,8 @@ https://www.ohmycrawl.com/technical-seo/301-vs-308/
 
 https://linuxhint.com/nginx-redirect-http-https/#:~:text=Redirect%20HTTP%20to%20HTTPS%20version%20for%20Specified%20domain%20in%20Nginx&text=connections%20specified%20domain.-,Server_name%20domain%2Dname.com%20www.domain%2Dname.,HTTPS%20version%20of%20the%20site.
 
+https://blog.codefarm.me/2021/09/24/http-redirect-3xx/
+
 
 useful command:
 ---------------
