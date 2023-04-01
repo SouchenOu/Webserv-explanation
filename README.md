@@ -1535,6 +1535,15 @@ https://linuxhint.com/nginx-redirect-http-https/#:~:text=Redirect%20HTTP%20to%20
 https://blog.codefarm.me/2021/09/24/http-redirect-3xx/
 
 
+
+
+
+
+socket , bind , connect :
+
+https://www.geeksforgeeks.org/socket-programming-cc/
+
+
 useful command:
 ---------------
 
