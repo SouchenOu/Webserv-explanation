@@ -1376,12 +1376,55 @@ so this can get really complicated and that is why we have NGINX in the middle s
 
 
 
+17: HTTP redirections:
+----------------------
+
+17.1: 300 -->
+
+The HTTP 300 Multiple Choices redirect status response code indicates that the request has more than one possible responses. 
+
+17.2: 301 -->
+
+The HyperText Transfer Protocol (HTTP) 301 Moved Permanently redirect status response code indicates that the resource requested has been definitively moved to the URL given by the Location headers. 
+
+recommended to use the 301 code only as a response for GET or HEAD methods
 
 
+17.3: 302 -->
+
+302 code only as a response for GET or HEAD methods
+
+17.4: 303 -->
+
+303 See Other instead. This is useful when you want to give a response to a PUT method that is not the uploaded resource but a confirmation message such as: 'you successfully uploaded XYZ'.
 
 
+The HyperText Transfer Protocol (HTTP) 303 See Other redirect status response code indicates that the redirects don’t link to the newly uploaded resources, but to another page (such as a confirmation page or an upload progress page). This response code is usually sent back as a result of PUT or POST. The method used to display this redirected page is always GET.
 
-17: NGINX command line :
+
+17.5: 304 -->
+
+
+The HTTP 304 Not Modified client redirection response code indicates that there is no need to retransmit the requested resources. It is an implicit redirection to a cached resource. This happens when the request method is safe, like a GET or a HEAD request, or when the request is conditional and uses a If-None-Match or a If-Modified-Since header.
+
+17.6: 307 -->
+
+The only difference between 307 and 302 is that 307 guarantees that the method and the body will not be changed when the redirected request is made. With 302, some old clients were incorrectly changing the method to GET: the behavior with non-GET methods and 302 is then unpredictable on the Web, whereas the behavior with 307 is predictable. For GET requests, their behavior is identical.
+
+17.5: 308 -->
+
+308 Permanent Redirect for POST methods instead, as the method change is explicitly prohibited with this status.
+
+
+NGINX rewrite directive:
+------------------------
+
+The return Directive:
+
+You enclose the return in a server or location context that specifies the URLs to be rewritten
+
+
+18: NGINX command line :
 -------------------------
 
 
