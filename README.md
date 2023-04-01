@@ -21,6 +21,16 @@ The story is, the server keep listening any message it received, then we need to
 
 
 
+--> Notice that the client needs to know of the existence of and the address of the server, but the server does not need to know the address of the client pripr to the connection bieng established. Notice also thet once a connection is established, both sides can send and receive information.
+
+
+The system calls for establishing a connection are somewhat different for the client and the server, but both involve the basic construct sockets.
+
+A sockets is one end of an interprocess communication channel. the two processes each establish their own socket.
+
+<img width="985" alt="Screen Shot 2023-04-01 at 3 28 08 PM" src="https://user-images.githubusercontent.com/87101785/229298449-d98f599c-12cb-45d2-a143-20df6baed1cf.png">
+
+
 🌱 1. How internet works
 -------------------------
 
