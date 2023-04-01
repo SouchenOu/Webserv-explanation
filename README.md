@@ -1297,7 +1297,21 @@ To return the index file, NGINX checks for its existence and then makes an inter
     }
 
 
-15.6: include
+15.6:autoindex
+--------------
+
+We can achieve by creating the index.html file, for creating autoindex we need to use the ngx http autoindex module. If suppose we don’t have an index.html file in a specified directory which we want to generate, then we can navigate the URL and path, and the same will return the error 404 i.e. page not found. However, the autoindex in nginx is providing an easy way for a directory that is particular to generate a listing automatically. Adding nginx autoindex in the nginx configuration file is very easy. Below is the syntax shown to add into the nginx configuration file is as follows.
+
+
+   location /directory_name/ 
+   {
+       autoindex on;
+   }
+
+
+After restarting the nginx server now instead of returning the 404 (page not found) error the web server will return the index of the nginx directory.
+
+15.7: include
 ------------
 
 <img width="826" alt="Screen Shot 2023-03-30 at 11 57 47 AM" src="https://user-images.githubusercontent.com/87101785/228829266-3dc6b81d-39ad-427a-9e74-f0f013cda412.png">
