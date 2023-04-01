@@ -31,7 +31,22 @@ A sockets is one end of an interprocess communication channel. the two processes
 <img width="985" alt="Screen Shot 2023-04-01 at 3 28 08 PM" src="https://user-images.githubusercontent.com/87101785/229298449-d98f599c-12cb-45d2-a143-20df6baed1cf.png">
 
 
+-----> when a socket is created, the program has to specify the address domain and socket type.
+
+<img width="985" alt="Screen Shot 2023-04-01 at 3 33 42 PM" src="https://user-images.githubusercontent.com/87101785/229298780-3a67ab81-d97b-4ef4-924c-cb5cfcd97f92.png">
+
+Two processes (client and server) can communicate with each other only if their sockets are of the same type and the same domain
+
+There is two types of socket:
+
+stream sockets and datagram sockets each uses its ow communications protocol.
+
+<img width="1124" alt="Screen Shot 2023-04-01 at 3 56 50 PM" src="https://user-images.githubusercontent.com/87101785/229301221-07c6bed9-5923-46d2-80d1-6ba7b1b2eb89.png">
+
+
+
 🌱 1. How internet works
+
 -------------------------
 
 The Internet is the backbone of the Web, the technical infrastructure that makes the Web possible. At it's most basic, the Internet is a large network of computers which communicate all together.
