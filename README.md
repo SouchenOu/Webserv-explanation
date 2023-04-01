@@ -2,6 +2,22 @@
 
 
 
+Some basic knowledge:
+--------------------
+
+In the internet world, there is always a server who can serve multiple clients. For example, Google, Netflix, Facebook... and so on are servers. People like us are client and we can use web browser (Chrome, Edge, Opera, Firefox....) to communicate with servers.
+
+<img width="748" alt="Screen Shot 2023-04-01 at 2 20 27 PM" src="https://user-images.githubusercontent.com/87101785/229294782-67083e09-dff0-40e6-aefa-73c5e3c13ce2.png">
+
+
+
+
+About This project:
+-----------------------
+
+
+
+The story is, the server keep listening any message it received, then we need to analyze what the useful information in the message by parsing it. The useful information we care about is the file name (with path) and file extension. The server then open the file according to the path and put the content of the file into a reply-message which we will later send to the client. Before sending the reply-message, we should first tell the client what kind of file content type we are going to send, maybe image file (.jpg, .png, ...) or txt file (.html, .doc, ...) 
 
 
 
