@@ -1225,6 +1225,20 @@ The send() function sends data on the socket with descriptor socket
 
 int send(int socket, char *buffer, int length, int flags);
 
+14.13: inet_peton()
+--------------------
+
+int inet_pton(int af, const char *restrict src, void *restrict dst);
+
+This function converts the character string src into a network
+address structure in the af address family, then copies the
+network address structure to dst.  The af argument must be either
+AF_INET or AF_INET6.  dst is written in network byte order.
+
+14.14: setsockopt() :
+----------------------
+
+
 
 
 15: confif_file NGINX:
