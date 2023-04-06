@@ -785,6 +785,11 @@ DELETE: Removes all current representations of the target resource given by a UR
 CONNECT: Establishes a tunnel to the server identified by a given URI.
 
 
+<img width="608" alt="Screen Shot 2023-04-06 at 10 39 12 AM" src="https://user-images.githubusercontent.com/87101785/230353762-25aab6ae-3d5e-4e30-9cda-ef0223c191a6.png">
+
+
+
+
 
  🌱 8.1 example:
 ------------
