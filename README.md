@@ -768,6 +768,23 @@ Une reponse HTTP contient des donner envoyer depuis le serveur (Les donner recue
 Pour aider le navigateur a determiner le type de fichier qu'il recois, le serveur indique le type de donner que contient le fichier
 
 
+------ HTTP - methods:
+----------------------
+
+
+GET : The GET method is used to retrieve information from the given server using a given URI. Requests using GET should only retrieve data and should have no other effect on the data.
+
+HEAD: The HTTP HEAD method requests the headers that would be returned if the HEAD request's URL was instead requested with the HTTP GET method. For example, if a URL might produce a large download, a HEAD request could read its Content-Length header to check the filesize without actually downloading the file.
+
+POST: A POST request is used to send data to the server, for example, customer information, file upload, etc. using HTML forms.
+
+PUT : Replaces all current representations of the target resource with the uploaded content.
+
+DELETE: Removes all current representations of the target resource given by a URI.
+
+CONNECT: Establishes a tunnel to the server identified by a given URI.
+
+
 
  🌱 8.1 example:
 ------------
