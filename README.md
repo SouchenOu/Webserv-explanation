@@ -1590,6 +1590,11 @@ socket , bind , connect :
 https://www.geeksforgeeks.org/socket-programming-cc/
 
 
+--> Everything about webserver creation
+
+https://beej.us/guide/bgnet/html/#client-server-background
+
+
 useful command:
 ---------------
 
