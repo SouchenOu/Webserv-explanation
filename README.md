@@ -1262,6 +1262,11 @@ AF_INET or AF_INET6.  dst is written in network byte order.
 
 
 
+14.15: recv() :
+---------------
+
+The recv function is used to read incoming data on connection-oriented sockets, or connectionless sockets. When using a connection-oriented protocol, the sockets must be connected before calling recv. When using a connectionless protocol, the sockets must be bound before calling recv.
+
 
 15: confif_file NGINX:
 ---------------------
