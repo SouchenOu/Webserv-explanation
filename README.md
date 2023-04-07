@@ -1573,7 +1573,9 @@ HTTP redirects:
 --> https://phoenixnap.com/kb/redirect-http-to-https-nginx
 
 
+---> webserver resume:
 
+https://osasazamegbe.medium.com/showing-building-an-http-server-from-scratch-in-c-2da7c0db6cb7
 
 
 socket , bind , connect :
