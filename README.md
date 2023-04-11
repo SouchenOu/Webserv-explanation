@@ -916,6 +916,26 @@ Referrer: referrer has info regarding the referring site, if you are to click on
 ------------------------------------------------------------------------
 
 
+🌱 HTTP header:
+-------------
+
+An HTTP header is a field of an HTTP request or response that passes additional context and metadata about the request or response. For example, a request message can use headers to indicate it's preferred media formats, while a response can use header to indicate the media format of the returned body. Headers are case-insensitive, begin at the start of a line and are immediately followed by a ':' and a header-dependent value.
+
+
+--> request header:
+
+A request header is an HTTP header that can be used in an HTTP request to provide information about the request context, so that the server can tailor the response. For example, the Accept-* headers indicate the allowed and preferred formats of the response. Other headers can be used to supply authentication credentials (e.g. Authorization), to control caching, or to get information about the user agent or referrer, etc.
+
+*The HTTP message below shows a few request headers after a GET request:
+
+<img width="587" alt="Screen Shot 2023-04-11 at 3 15 55 PM" src="https://user-images.githubusercontent.com/87101785/231208959-c10a6c3f-e785-4a3d-a966-6a4eeaf95612.png">
+
+*The HTTP message below shows a few request headers after a SET request:
+
+<img width="587" alt="Screen Shot 2023-04-11 at 3 17 04 PM" src="https://user-images.githubusercontent.com/87101785/231209346-ffe5065d-1d35-4fe4-874d-e9135d4d3b03.png">
+
+In requests, (such as POST or PUT), the client tells the server what type of data is actually sent.( so we find content-type just in POST request)
+
 
 🌱 9: Protocoles:
 -----------------
