@@ -930,9 +930,17 @@ A request header is an HTTP header that can be used in an HTTP request to provid
 
 <img width="587" alt="Screen Shot 2023-04-11 at 3 15 55 PM" src="https://user-images.githubusercontent.com/87101785/231208959-c10a6c3f-e785-4a3d-a966-6a4eeaf95612.png">
 
+<img width="587" alt="Screen Shot 2023-04-11 at 3 20 21 PM" src="https://user-images.githubusercontent.com/87101785/231210394-9eba5ffd-a7ce-46b1-adcf-b57e3776b12d.png">
+
+
 *The HTTP message below shows a few request headers after a SET request:
 
 <img width="587" alt="Screen Shot 2023-04-11 at 3 17 04 PM" src="https://user-images.githubusercontent.com/87101785/231209346-ffe5065d-1d35-4fe4-874d-e9135d4d3b03.png">
+
+<img width="587" alt="Screen Shot 2023-04-11 at 3 19 21 PM" src="https://user-images.githubusercontent.com/87101785/231210273-f40e9c1a-de7f-4114-8e7e-3c83f079a735.png">
+
+
+
 
 In requests, (such as POST or PUT), the client tells the server what type of data is actually sent.( so we find content-type just in POST request)
 
