@@ -1623,6 +1623,12 @@ https://www.geeksforgeeks.org/socket-programming-cc/
 https://beej.us/guide/bgnet/html/#client-server-background
 
 
+
+---> Everything about HTTP header
+
+https://en.wikipedia.org/wiki/List_of_HTTP_header_fields
+
+
 useful command:
 ---------------
 
