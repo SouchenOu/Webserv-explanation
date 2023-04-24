@@ -1548,15 +1548,7 @@ The return Directive:
 You enclose the return in a server or location context that specifies the URLs to be rewritten
 
 
-18: NGINX command line :
--------------------------
 
-
-1. Nginx -t 
-
-2. nginx services restart nginx
-
-3. nginx -s reload. ---> (To reload our NGINX configuration)
 
 
 ___________________________________________________________________________________________________________________________________________________
@@ -1818,47 +1810,19 @@ https://beej.us/guide/bgnet/html/#client-server-background
 https://en.wikipedia.org/wiki/List_of_HTTP_header_fields
 
 
-useful command:
----------------
+
+
+ NGINX command line :
+-------------------------
+
+
+1. Nginx -t 
+
+2. nginx services restart nginx
+
+3. nginx -s reload. ---> (To reload our NGINX configuration)
 
 
 
 
-/Users/souchen/.brew/etc/nginx/nginx.conf
 
-/Users/souchen/.brew/etc/nginx/nginx.conf
-
-nginx -t
-
-
-
-
-// NGINX config file
-https://github.com/webantic/nginx-config-parser
-
-https://www.usna.edu/Users/cs/roche/courses/f21si413/lab/07/
-
-https://stackoverflow.com/questions/28530284/generate-an-ast-in-c
-
-https://support.bettercloud.com/s/article/Creating-your-own-Custom-Regular-Expression-bc72153
-
-https://www.freecodecamp.org/news/the-nginx-handbook/
-
-https://www.digitalocean.com/community/tutorials/understanding-nginx-server-and-location-block-selection-algorithms
-
-https://www.rfc-editor.org/rfc/rfc2616.html
-
-#Articls
-
-https://www.ibm.com/docs/en/odm/8.0.1?topic=tree-abstract-syntax-abstract-nodes
-
-#PDFs to read
-
-http://www1.cs.columbia.edu/~sedwards/classes/2003/w4115/ast.pdf
-
-
-https://www.sciencedirect.com/topics/computer-science/abstract-syntax-tree/pdf
-
-#Videos
-
-https://youtube.com/playlist?list=PLzLzYGEbdY5n9ITKUqOuRjXkRU5tMW2Sd
