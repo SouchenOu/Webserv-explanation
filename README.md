@@ -1268,6 +1268,14 @@ exceptfds: Points to a bit set of descriptors to check for exception conditions 
 timeout : Points to the time to wait for select() to complete.
 
 
+
+The world of select() :
+
+with select() instead of having a process for each request, there is usually only one process that "multi-plexes" all requests, servicing each request as much as it can.
+
+
+
+
 14.12: send():
 -------------
 
@@ -1810,6 +1818,9 @@ https://beej.us/guide/bgnet/html/#client-server-background
 https://en.wikipedia.org/wiki/List_of_HTTP_header_fields
 
 
+--> Everthing about select():
+
+https://www.lowtek.com/sockets/select.html#:~:text=select()%20works%20by%20blocking,to%20be%20woken%20up%20by.
 
 
  NGINX command line :
