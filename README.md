@@ -1269,6 +1269,26 @@ timeout : Points to the time to wait for select() to complete.
 
 
 
+--->MULTIPLEXING with select
+----------------------------
+
+--> Explain I/O multiplixing using select()
+
+int select(int nfds, ds_set * readfds, fd_set writefds, fd_set * exceptfds, struct timeval timeout);
+
+firstly we have the number of file descriptors, we have to tell select listen i have numeric chunk of file descriptors they start from zero ,one, two ....etc, so we need to tell select you only need to pay attention to the first five file-descriptor or the first ten etc.., we dont want to have to keep track of all 4096 hypothetical file descriptors.
+
+so what select is going to do ?
+
+
+select is going to put our process to sleep until something happens and we tell the operating system what that something should be using this three arguments you have got to readfds where we say operating system i'm going to give you a collection of file descriptors and if any of them are ready for reading weak me up, then i'm going to give it a set of write file descriptors and say operating system if any of these are ready for writing weak me up.
+
+when we call write() or when we call send() what we are really doing is saying we have a buffer in our user level code, what we want to do is asking the operating system hey will you take these bytes and put them in your buffer so that you can eventually send them to wherever it is they need to end up at on the other side of the planet, and the operating system says yeah sure i'm going to accept these bytes from you in your user level buffer and i'm going to put them in my kernel level buffer, and i'm going to send them out into the world what can possibly happen is 
+
+
+
+
+
 The world of select() :
 
 with select() instead of having a process for each request, there is usually only one process that "multi-plexes" all requests, servicing each request as much as it can.
