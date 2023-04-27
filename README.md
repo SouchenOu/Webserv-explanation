@@ -1283,8 +1283,11 @@ so what select is going to do ?
 
 select is going to put our process to sleep until something happens and we tell the operating system what that something should be using this three arguments you have got to readfds where we say operating system i'm going to give you a collection of file descriptors and if any of them are ready for reading weak me up, then i'm going to give it a set of write file descriptors and say operating system if any of these are ready for writing weak me up.
 
-when we call write() or when we call send() what we are really doing is saying we have a buffer in our user level code, what we want to do is asking the operating system hey will you take these bytes and put them in your buffer so that you can eventually send them to wherever it is they need to end up at on the other side of the planet, and the operating system says yeah sure i'm going to accept these bytes from you in your user level buffer and i'm going to put them in my kernel level buffer, and i'm going to send them out into the world what can possibly happen is 
+when we call write() or when we call send() what we are really doing is saying we have a buffer in our user level code, what we want to do is asking the operating system hey will you take these bytes and put them in your buffer so that you can eventually send them to wherever it is they need to end up at on the other side of the planet, and the operating system says yeah sure i'm going to accept these bytes from you in your user level buffer and i'm going to put them in my kernel level buffer, and i'm going to send them out into the world .
 
+so what sselect is used for ?
+
+select allows us to do multiple things at a time and only pause our program when we have no other work to do, and only be woken up whenever any work can possibly be done 
 
 
 
