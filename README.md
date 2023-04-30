@@ -1874,4 +1874,11 @@ https://w3.cs.jmu.edu/kirkpams/OpenCSF/Books/csf/html/TCPSockets.html
 
 https://www.garshol.priv.no/download/text/http-tut.html
 
-
+https://datatracker.ietf.org/doc/html/rfc3875
+ 
+ 
+ 
+ 
+ 
+ 
+ https://github.com/Kaydooo/Webserv_42#request-parser
