@@ -1860,3 +1860,18 @@ https://www.lowtek.com/sockets/select.html#:~:text=select()%20works%20by%20block
 
 
 
+
+
+rsc:
+
+https://www.youtube.com/watch?v=Y6pFtgRdUts&ab_channel=JacobSorber
+
+https://www.ibm.com/docs/en/i/7.2?topic=designs-example-nonblocking-io-select
+
+https://www.tutorialspoint.com/cplusplus/cpp_web_programming.htm
+
+https://w3.cs.jmu.edu/kirkpams/OpenCSF/Books/csf/html/TCPSockets.html
+
+https://www.garshol.priv.no/download/text/http-tut.html
+
+
