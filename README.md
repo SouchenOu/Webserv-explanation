@@ -1856,7 +1856,7 @@ https://www.lowtek.com/sockets/select.html#:~:text=select()%20works%20by%20block
 
 3. nginx -s reload. ---> (To reload our NGINX configuration)
 
-
+4. to solve the problem (nginx: [error] invalid PID number) --> brew services restart nginx
 
 
 
