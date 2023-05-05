@@ -1858,6 +1858,28 @@ How to serve a dynamique website with CGI?
 [Step 2] Execute CGI in child process.
 
 
+<img width="793" alt="Screen Shot 2023-05-04 at 2 22 36 PM" src="https://user-images.githubusercontent.com/87101785/236441905-f67ee1f9-01a9-46a9-baa6-2712a6eeafd9.png">
+
+
+<img width="587" alt="Screen Shot 2023-05-04 at 11 00 14 AM" src="https://user-images.githubusercontent.com/87101785/236441925-b03ee79e-e8d8-437a-b487-b82cf00d3a6e.png">
+
+
+
+<img width="587" alt="Screen Shot 2023-05-04 at 11 00 21 AM" src="https://user-images.githubusercontent.com/87101785/236441933-df911b65-1890-4423-8ac3-a73c4364b616.png">
+
+
+
+<img width="587" alt="Screen Shot 2023-05-04 at 11 00 24 AM" src="https://user-images.githubusercontent.com/87101785/236441941-0ab65420-2dce-4234-b33d-06e9b6292ab8.png">
+
+
+<img width="1195" alt="Screen Shot 2023-05-04 at 12 06 34 PM" src="https://user-images.githubusercontent.com/87101785/236441952-9e8b8387-6114-4b51-9d03-430534fe02fd.png">
+
+
+<img width="1195" alt="Screen Shot 2023-05-04 at 12 06 56 PM" src="https://user-images.githubusercontent.com/87101785/236441967-34a5a2bb-0030-4ac6-9e88-ea8c383410ba.png">
+
+
+<img width="1195" alt="Screen Shot 2023-05-04 at 12 07 04 PM" src="https://user-images.githubusercontent.com/87101785/236441980-96638a49-810b-4391-92cd-14f378c05bd7.png">
+
 
 
 
