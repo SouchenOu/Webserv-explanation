@@ -1845,6 +1845,22 @@ https://en.wikipedia.org/wiki/List_of_HTTP_header_fields
 
 https://www.lowtek.com/sockets/select.html#:~:text=select()%20works%20by%20blocking,to%20be%20woken%20up%20by.
 
+What is CGI
+-----------
+
+CGI stands for Common Gateway Interface, it enables web-server to provide dynamic web-page to clients. When client sends request(usually GET, POST method) to server, web-server makes a process to run the requested data. Then send the result back to client.
+
+How to serve a dynamique website with CGI?
+-----------------------------------------
+
+[Step1] Make process by using fork( ). Also open pipes.
+
+[Step 2] Execute CGI in child process.
+
+
+
+
+
 
  NGINX command line :
 -------------------------
