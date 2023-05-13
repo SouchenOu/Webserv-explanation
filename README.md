@@ -1896,7 +1896,8 @@ How to serve a dynamique website with CGI?
 
 4. to solve the problem (nginx: [error] invalid PID number) --> brew services restart nginx
 
-
+5 curl -H "Transfer-Encoding: chunked" http://localhost:7777/upload-test --> four chunked request
+ 
 
 
 
