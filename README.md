@@ -1898,7 +1898,7 @@ How to serve a dynamique website with CGI?
 
 5 curl -H "Transfer-Encoding: chunked" http://localhost:7777/upload-test --> four chunked request
  
-
+6: chunked request --> echo -ne 'POST /upload-test HTTP/1.1\nHost: localhost:7777\nTransfer-Encoding: chunked\r\n\r\n' | nc localhost 7777
 
 
 rsc:
