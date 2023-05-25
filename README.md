@@ -1,4 +1,4 @@
-# Webserv-explination
+# Webserv-explanation
 
 
 
